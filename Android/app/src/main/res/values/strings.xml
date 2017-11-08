@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, OtherActivity!</string>
+    <string name="app_name">学习安卓</string>
+    <string name="main_name">学习记录</string>
+    //title_activity_other_activiyt
+    <string name="title_activity_other_activiyt">不同Activity的示例</string>
+    <string name="title_activity_day2">Day2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_code_view">CodeView</string>
+    <string name="title_activity_day2_list_view">day2ListView</string>
+    <string name="title_activity_mix_view">MixView</string>
+    <string name="title_activity_draw_view">DrawView</string>
+    <string name="title_activity_custom_view">CustomView</string>
+
+    <string name="bn1">测试按钮1</string>
+    <string name="bn2">测试按钮2</string>
+    <string name="bn3">测试按钮3</string>
+    <string name="bn4">测试按钮4</string>
+    <string name="bn5">测试按钮5</string>
+    <string name="title_activity_learn_table_layout">LearnTableLayout</string>
+    <string name="title_activity_linear">LinearActivity</string>
+    <string name="title_activity_table_layout">TableLayout</string>
+    <string name="title_activity_learn_frame_layout">LearnFrameLayout</string>
+    <string name="title_activity_learn_relative_layout">LearnRelativeLayout</string>
+    <string name="title_activity_learn_grid_layout">LearnGridLayout</string>
+    <string name="title_activity_learn_absolute_layout">LearnAbsoluteLayout</string>
+    <string name="title_activity_learn_text_view">LearnTextView</string>
+    <string name="title_activity_learn_text_view01">LearnTextView01</string>
+    <string name="title_activity_text_view_list">TextViewList</string>
+    <string name="title_activity_learn_text_view02">LearnTextView02</string>
+    <string name="title_activity_learn_edit_text">LearnEditText</string>
+    <string name="title_activity_leran_button">LeranButton</string>
+    <string name="title_activity_learn_radio_button_and_check_box">LearnRadioButtonAndCheckBox</string>
+    <string name="title_activity_learn_togg_button_and_switch">LearnToggButtonAndSwitch</string>
+    <string name="title_activity_learn_analog_clock">LearnAnalogClock</string>
+    <string name="title_activity_learn_chronomerter">LearnChronomerter</string>
+    <string name="title_activity_chronometer_test">ChronometerTest</string>
+    <string name="title_activity_learn_image_view01">LearnImageView01</string>
+    <string name="title_activity_simple_adapter_test">SimpleAdapterTest</string>
+    <string name="title_activity_learn_auto_complete_text_view">LearnAutoCompleteTextView</string>
+    <string name="title_activity_learn_grid_view">LearnGridView</string>
+    <string name="title_activity_day4_list">Day4List</string>
+    <string name="title_activity_learn_stack_view">LearnStackView</string>
+    <string name="title_activity_learn_progress_bar">LearnProgressBar</string>
+    <string name="title_activity_learn_window_progress">LearnWindowProgress</string>
+    <string name="title_activity_learn_seek_bar">LearnSeekBar</string>
+    <string name="title_activity_learn_rating_bar">LearnRatingBar</string>
+    <string name="title_activity_learn_view_switcher">LearnViewSwitcher</string>
+    <string name="title_activity_learn_image_switcher">LearnImageSwitcher</string>
+    <string name="title_activity_learn_toast">LearnToastActivity</string>
+    <string name="title_activity_learn_calendar_view">LearnCalendarView</string>
+    <string name="title_activity_learn_date_picker_and_time_picker">LearnDatePickerAndTimePicker</string>
+    <string name="title_activity_learn_number_picker">LearnNumberPickerActivity</string>
+    <string name="title_activity_learn_search_view">LearnSearchViewActivity</string>
+    <string name="title_activity_learn_tab_host">LearnTabHostActivity</string>
+    <string name="title_activity_learn_scroll_view">LearnScrollViewActivity</string>
+    <string name="title_activity_learn_alert_dialog">LearnAlertDialogActivity</string>
+    <string name="title_activity_learn_popup_window_acitvity">LearnPopupWindowAcitvity</string>
+    <string name="title_activity_learn_date_time_pick_dialog_window">LearnDateTimePickDialogWindowActivity</string>
+    <string name="title_activity_learn_progress_dialog">LearnProgressDialogActivity</string>
+    <string name="title_activity_learn_sub_menu">LearnSubMenuActivity</string>
+    <string name="title_activity_learn_activity_menu">LearnActivityMenu</string>
+    <string name="title_activity_learn_context_menu">LearnContextMenuActivity</string>
+    <string name="title_activity_learn_xmlcontext_menu">LearnXMLContextMenu</string>
+    <string name="title_activity_learn_popup_menu">LearnPopupMenuActivity</string>
+    <string name="title_activity_learn_action_bar">LearnActionBarActivity</string>
+    <string name="title_activity_learn_action_bar_item">LearnActionBarItemActivity</string>
+    <string name="red_title">红色</string>
+    <string name="blue_title">蓝色</string>
+    <string name="green_title">绿色</string>
+    <string name="font_size">字体大小</string>
+    <string name="font_color">字体颜色</string>
+    <string name="plain_item">普通菜单项</string>
+    <string name="button_title_ok">Ok</string>
+    <string name="draw_color">画笔颜色</string>
+    <string name="draw_width">画笔宽度</string>
+    <string name="draw_blur">毛玻璃</string>
+    <string name="draw_emboss">emboss</string>
+    <string name="font_10">10号字体</string>
+    <string name="font_12">12号字体</string>
+    <string name="font_14">14号字体</string>
+    <string name="font_16">16号字体</string>
+    <string name="font_18">18号字体</string>
+    <string name="title_activity_plane_game">PlaneGame</string>
+    <string name="title_activity_event_list">EventListActivity</string>
+    <string name="title_activity_send_sms">SendSmsActivity</string>
+    <string name="title_activity_anonymous_listener">AnonymousListener</string>
+    <string name="title_activity_cal_prime">CalPrime</string>
+
+
+    <string name="width_1">细</string>
+    <string name="width_2">中</string>
+    <string name="width_3">粗</string>
+
+
+    <string name="circle">圆形</string>
+    <string name="square">正方形</string>
+    <string name="rect">长方形</string>
+    <string name="round_rect">圆角矩形</string>
+    <string name="oval">椭圆形</string>
+    <string name="triangle">三角形</string>
+    <string name="pentagon">五角形</string>
+    <string name="contact">查看联系人</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_sys_action">SysActionActivity</string>
+    <string name="title_activity_data_type_override">DataTypeOverride</string>
+    <string name="title_activity_bitmap_test">BitmapTest</string>
+    <string name="title_activity_day6_list_acitvity">Day6ListAcitvity</string>
+    <string name="title_activity_draw_picture">DrawPicture</string>
+
+</resources>

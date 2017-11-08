@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.heboyce.learnandroid">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Day7.SchemeActivity"
+            android:icon="@drawable/ic_scheme"
+            android:label="指定scheme的Activity">
+            <intent-filter>
+                <action android:name="xx" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 只要Intent的Data属性的scheme是lee，即可启动该Activity -->
+                <data android:scheme="lee" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Day7.SchemeHostPortActivity"
+            android:icon="@drawable/ic_host"
+            android:label="指定scheme、host、port的Activity">
+            <intent-filter>
+                <action android:name="xx" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!--
+                只要Intent的Data属性的scheme是lee，且host是www.fkjava.org
+                port是8888即可启动该Activity
+                -->
+                <data
+                    android:host="www.fkjava.org"
+                    android:port="8888"
+                    android:scheme="lee" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Day7.SchemeHostPathActivity"
+            android:icon="@drawable/ic_sp"
+            android:label="指定scheme、host、path的Activity">
+            <intent-filter>
+                <action android:name="xx" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!--
+                只要Intent的Data属性的scheme是lee，且host是www.fkjava.org
+                path是/mypath，即可启动该Activity
+                -->
+                <data
+                    android:host="www.fkjava.org"
+                    android:path="/mypath"
+                    android:scheme="lee" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Day7.SchemeHostPortPathActivity"
+            android:icon="@drawable/ic_path"
+            android:label="指定scheme、host、port、path的Activity">
+            <intent-filter>
+                <action android:name="xx" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!--
+                需要Intent的Data属性的scheme是lee，且host是www.fkjava.org
+                port是8888，且path是/mypath，才可启动该Activity
+                -->
+                <data
+                    android:host="www.fkjava.org"
+                    android:path="/mypath"
+                    android:port="8888"
+                    android:scheme="lee" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Day7.SchemeHostPortPathTypeActivity"
+            android:icon="@drawable/ic_type"
+            android:label="指定scheme、host、port、path、type的Activity">
+            <intent-filter>
+                <action android:name="xx" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!--
+                需要Intent的Data属性的scheme是lee，且host是www.fkjava.org
+                port是8888，且path是/mypath
+                且type是abc/xyz，才可启动该Activity
+                -->
+                <data
+                    android:host="www.fkjava.org"
+                    android:mimeType="abc/xyz"
+                    android:path="/mypath"
+                    android:port="8888"
+                    android:scheme="lee" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Day1.OtherActiviyt"
+            android:label="@string/title_activity_other_activiyt" />
+        <activity
+            android:name=".Day1.ExpandableListActivityTest"
+            android:label="查看星际兵种" />
+        <activity
+            android:name=".Day1.PreferenceActivityTest"
+            android:label="设置程序参数" />
+        <activity
+            android:name=".Day2.Day2"
+            android:label="@string/title_activity_day2" />
+        <activity
+            android:name=".Day2.CodeView"
+            android:label="@string/title_activity_code_view" />
+        <activity
+            android:name=".Day2.day2ListView"
+            android:label="@string/title_activity_day2_list_view" />
+        <activity
+            android:name=".Day2.Day2ListView"
+            android:label="@string/title_activity_day2_list_view" />
+        <activity
+            android:name=".Day2.MixView"
+            android:label="@string/title_activity_mix_view" />
+        <activity
+            android:name=".Day2.CustomView"
+            android:label="@string/title_activity_custom_view" />
+        <activity
+            android:name=".Day2.LearnTableLayout"
+            android:label="@string/title_activity_learn_table_layout" />
+        <activity
+            android:name=".Day2.LinearActivity"
+            android:label="@string/title_activity_linear" />
+        <activity
+            android:name=".Day2.TableLayout"
+            android:label="@string/title_activity_table_layout" />
+        <activity
+            android:name=".Day2.LearnFrameLayout"
+            android:label="@string/title_activity_learn_frame_layout" />
+        <activity
+            android:name=".Day2.LearnRelativeLayout"
+            android:label="@string/title_activity_learn_relative_layout" />
+        <activity
+            android:name=".Day2.LearnGridLayout"
+            android:label="@string/title_activity_learn_grid_layout" />
+        <activity
+            android:name=".Day2.LearnAbsoluteLayout"
+            android:label="@string/title_activity_learn_absolute_layout" />
+        <activity
+            android:name=".Day3.LearnTextView01"
+            android:label="@string/title_activity_learn_text_view01" />
+        <activity
+            android:name=".Day3.TextViewList"
+            android:label="@string/title_activity_text_view_list" />
+        <activity
+            android:name=".Day3.LearnTextView02"
+            android:label="@string/title_activity_learn_text_view02" />
+        <activity
+            android:name=".Day3.LearnEditText"
+            android:label="@string/title_activity_learn_edit_text" />
+        <activity
+            android:name=".Day3.LeranButton"
+            android:label="@string/title_activity_leran_button" />
+        <activity
+            android:name=".Day3.LearnRadioButtonAndCheckBox"
+            android:label="@string/title_activity_learn_radio_button_and_check_box" />
+        <activity
+            android:name=".Day3.LearnToggButtonAndSwitch"
+            android:label="@string/title_activity_learn_togg_button_and_switch" />
+        <activity
+            android:name=".Day3.LearnAnalogClock"
+            android:label="@string/title_activity_learn_analog_clock" />
+        <activity
+            android:name=".Day3.LearnChronomerter"
+            android:label="@string/title_activity_learn_chronomerter" />
+        <activity
+            android:name=".Day3.ChronometerTest"
+            android:label="@string/title_activity_chronometer_test" />
+        <activity
+            android:name=".Day3.LearnImageView01"
+            android:label="@string/title_activity_learn_image_view01" />
+        <activity
+            android:name=".Day3.SimpleAdapterTest"
+            android:label="@string/title_activity_simple_adapter_test" />
+        <activity
+            android:name=".Day3.LearnAutoCompleteTextView"
+            android:label="@string/title_activity_learn_auto_complete_text_view" />
+        <activity
+            android:name=".Day3.LearnGridView"
+            android:label="@string/title_activity_learn_grid_view" />
+        <activity
+            android:name=".Day4.Day4List"
+            android:label="@string/title_activity_day4_list" />
+        <activity
+            android:name=".Day4.LearnStackView"
+            android:label="@string/title_activity_learn_stack_view" />
+        <activity
+            android:name=".Day4.LearnProgressBar"
+            android:label="@string/title_activity_learn_progress_bar" />
+        <activity
+            android:name=".Day4.LearnWindowProgress"
+            android:label="@string/title_activity_learn_window_progress" />
+        <activity
+            android:name=".Day4.LearnSeekBar"
+            android:label="@string/title_activity_learn_seek_bar" />
+        <activity
+            android:name=".Day4.LearnRatingBar"
+            android:label="@string/title_activity_learn_rating_bar" />
+        <activity
+            android:name=".Day4.LearnViewSwitcher"
+            android:label="@string/title_activity_learn_view_switcher" />
+        <activity
+            android:name=".Day4.LearnImageSwitcher"
+            android:label="@string/title_activity_learn_image_switcher" />
+        <activity
+            android:name=".Day4.LearnToastActivity"
+            android:label="@string/title_activity_learn_toast" />
+        <activity
+            android:name=".Day4.LearnCalendarView"
+            android:label="@string/title_activity_learn_calendar_view" />
+        <activity
+            android:name=".Day4.LearnDatePickerAndTimePicker"
+            android:label="@string/title_activity_learn_date_picker_and_time_picker" />
+        <activity
+            android:name=".Day4.LearnNumberPickerActivity"
+            android:label="@string/title_activity_learn_number_picker" />
+        <activity
+            android:name=".Day4.LearnSearchViewActivity"
+            android:label="@string/title_activity_learn_search_view" />
+        <activity
+            android:name=".Day4.LearnTabHostActivity"
+            android:label="@string/title_activity_learn_tab_host" />
+        <activity
+            android:name=".Day4.LearnScrollViewActivity"
+            android:label="@string/title_activity_learn_scroll_view" />
+        <activity
+            android:name=".Day4.LearnAlertDialogActivity"
+            android:label="@string/title_activity_learn_alert_dialog" />
+        <activity
+            android:name=".Day4.LearnPopupWindowAcitvity"
+            android:label="@string/title_activity_learn_popup_window_acitvity" />
+        <activity
+            android:name=".Day4.LearnDateTimePickDialogWindowActivity"
+            android:label="@string/title_activity_learn_date_time_pick_dialog_window" />
+        <activity
+            android:name=".Day4.LearnProgressDialogActivity"
+            android:label="@string/title_activity_learn_progress_dialog" />
+        <activity
+            android:name=".Day4.LearnSubMenuActivity"
+            android:label="@string/title_activity_learn_sub_menu" />
+        <activity
+            android:name=".Day4.LearnActivityMenu"
+            android:label="@string/title_activity_learn_activity_menu" />
+        <activity
+            android:name=".Day4.LearnContextMenuActivity"
+            android:label="@string/title_activity_learn_context_menu" />
+        <activity
+            android:name=".Day4.LearnXMLContextMenu"
+            android:label="@string/title_activity_learn_xmlcontext_menu" />
+        <activity
+            android:name=".Day4.LearnPopupMenuActivity"
+            android:label="@string/title_activity_learn_popup_menu" />
+        <activity
+            android:name=".Day4.LearnActionBarActivity"
+            android:label="@string/title_activity_learn_action_bar" />
+        <activity
+            android:name=".Day4.LearnActionBarItemActivity"
+            android:label="@string/title_activity_learn_action_bar_item" />
+        <activity
+            android:name=".Day5.PlaneGame"
+            android:label="@string/title_activity_plane_game" />
+        <activity
+            android:name=".Day5.EventListActivity"
+            android:label="@string/title_activity_event_list" />
+        <activity
+            android:name=".Day5.SendSmsActivity"
+            android:label="@string/title_activity_send_sms" />
+        <activity
+            android:name=".Day5.AnonymousListener"
+            android:label="@string/title_activity_anonymous_listener" />
+        <activity
+            android:name=".Day5.CalPrime"
+            android:label="@string/title_activity_cal_prime" />
+        <activity
+            android:name=".Day5.SysActionActivity"
+            android:label="@string/title_activity_sys_action" />
+        <activity
+            android:name=".Day6.DataTypeOverride"
+            android:label="@string/title_activity_data_type_override" />
+        <activity
+            android:name=".Day6.BitmapTest"
+            android:label="@string/title_activity_bitmap_test" />
+        <activity
+            android:name=".Day6.Day6ListAcitvity"
+            android:label="@string/title_activity_day6_list_acitvity" />
+        <activity
+            android:name=".Day6.DrawPicture"
+            android:label="@string/title_activity_draw_picture" />
+        <activity android:name=".Day7.Day701Activity" />
+        <activity android:name=".Day7.Day7002Activity">
+            <intent-filter>
+
+                <!-- 指定该Activity能响应Action为指定字符串的Intent -->
+                <action android:name="com.example.heboyce.learnandroid.Day7.CRAZYIT_ACTION" />
+                <!-- 指定该Activity能响应Action属性为helloWorld的Intent -->
+                <action android:name="helloWorld" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Day7.Day703Activity" />
+        <activity android:name=".Day7.Day7CategoryActivity" />
+        <activity android:name=".Day7.Day7ContactActivity" />
+        <activity android:name=".Day7.Day7HomeActivity">
+            <intent-filter>
+                <action android:name="xx" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="www.fkjava.org"
+                    android:path="/mypath"
+                    android:scheme="lee" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Day7.Day7DataTypeActivity" />
+        <activity android:name=".Day7.Day7TabActivity" />
+        <activity android:name=".Day8.Day8ResourceActivity" />
+        <activity android:name=".Day8.Day9ShapeActivity" />
+        <activity android:name=".Day8.Day8ClipActivity" />
+        <activity android:name=".Day8.Day8AnimActivity" />
+        <activity android:name=".Day8.Day8AnimatorActivity" />
+        <activity android:name=".Day8.Day8XMLActivity" />
+        <activity android:name=".Day8.Day8DrawActivity" />
+        <activity android:name=".Day8.Day8MarblesActivity" />
+        <activity android:name=".Day8.Day8GameActivity" />
+        <activity android:name=".Day8.Day8MeshPicActivity" />
+        <activity android:name=".Day9.Day9Chapter77SurfaceViewActivity" />
+        <activity android:name=".Day9.Day9Chapter772ShowWaveAcitvity" />
+        <activity android:name=".Chapter8.Chapter81Activity" />
+        <activity android:name=".Chapter8.Chapter82Activity" />
+        <activity android:name=".Chapter8.Chapter841Activity" />
+
+        <provider
+            android:name=".Chapter9.FirstProvider"
+            android:authorities="org.crazyit.providers.firstprovider"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Chapter9.Chapter92Activity" />
+
+        <provider
+            android:name=".Chapter9.DictProvider"
+            android:authorities="org.crazyit.providers.dictprovider"
+            android:enabled="true"
+            android:exported="true"></provider>
+    </application>
+
+</manifest>

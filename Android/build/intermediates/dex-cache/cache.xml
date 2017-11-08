@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/heboyce/.android/build-cache/ba0b3b46696222f5075da737afc785a052ff8da1/output/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/Users/heboyce/Desktop/Study/Project/LearnAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-22.2.1_e8725de155fa5a9937ee1c66010802e81538e0d0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/heboyce/.android/build-cache/ba0b3b46696222f5075da737afc785a052ff8da1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/Users/heboyce/Desktop/Study/Project/LearnAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_64616a9d68d82187c8817dbfca751a1e3041055a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/heboyce/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-alpha9/constraint-layout-solver-1.0.0-alpha9.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6a908fd0803cc5f65b007101002aec06dc7544da">
+        <dex dex="/Users/heboyce/Desktop/Study/Project/LearnAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.0-alpha9_1553c4be2982755b1393806a63b4884b585351bf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/heboyce/Desktop/Study/Project/LearnAndroid/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/heboyce/Desktop/Study/Project/LearnAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_d3a580e3d8804a7d3b3d7fcf5526685b175df704/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/heboyce/.android/build-cache/c94e8b8a4eb204376e5cb67e110c5bd5fb847add/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/Users/heboyce/Desktop/Study/Project/LearnAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fd6a8769af8056c6ff729dc20af72695fc17064b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/heboyce/Desktop/Study/Project/LearnAndroid/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9e8768764a490f00b9e3a8dd3ac5a6addadf4085">
+        <dex dex="/Users/heboyce/Desktop/Study/Project/LearnAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_9be78eebe9aa90afa147feaaa9fb56c76fa8a04c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/heboyce/.android/build-cache/4cdbdad078e56e0a9f282225dbdb057e3378fd6f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2b64f6a762f61a2379d6a79af03e2ee56eefe0b">
+        <dex dex="/Users/heboyce/Desktop/Study/Project/LearnAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0ef307e567264624b0f6557dd677a0faab098265/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/heboyce/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/Users/heboyce/Desktop/Study/Project/LearnAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-22.2.1_50e3895005432e0d9f0d2fba323892979af0a374/classes.dex" />
+    </item>
+
+</items>

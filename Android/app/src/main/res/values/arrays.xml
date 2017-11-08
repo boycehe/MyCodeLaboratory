@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="gender_name_list">
+	<item>男</item>
+	<item>女</item>
+</string-array>
+<string-array name="gender_value_list">
+	<item>male</item>
+	<item>female</item>
+</string-array>
+
+	<array name="plain_arr">
+		<item>@color/abc_background_cache_hint_selector_material_dark</item>
+		<item>@color/abc_input_method_navigation_guard</item>
+	</array>
+	<string-array name="books">
+		<item>疯狂Java讲义</item>
+		<item>疯狂Ajax讲义</item>
+		<item>疯狂Android讲义</item>
+	</string-array>
+</resources>

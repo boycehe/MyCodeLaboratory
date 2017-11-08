@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="带边框的文本"
+            android:textSize="24pt"
+            android:background="@drawable/bg_border"
+            android:id="@+id/bg1"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="圆角边框，渐变背景的文本"
+            android:textSize="24pt"
+            android:background="@drawable/bg_border2"
+            android:id="@+id/bg2"/>
+
+</LinearLayout>
