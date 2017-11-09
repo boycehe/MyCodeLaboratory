@@ -7,15 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00AB7E4A1FB4A4D900002A85 /* LPDTriggerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AB7E491FB4A4D900002A85 /* LPDTriggerEvent.m */; };
 		00C060291FB4006600AC4E38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C060281FB4006600AC4E38 /* AppDelegate.m */; };
 		00C0602C1FB4006600AC4E38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C0602B1FB4006600AC4E38 /* ViewController.m */; };
 		00C0602F1FB4006600AC4E38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C0602D1FB4006600AC4E38 /* Main.storyboard */; };
 		00C060311FB4006600AC4E38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C060301FB4006600AC4E38 /* Assets.xcassets */; };
 		00C060341FB4006600AC4E38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C060321FB4006600AC4E38 /* LaunchScreen.storyboard */; };
 		00C060371FB4006600AC4E38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C060361FB4006600AC4E38 /* main.m */; };
+		00C060621FB4594A00AC4E38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C060611FB4594A00AC4E38 /* main.m */; };
+		00C060671FB45BD300AC4E38 /* NSInvocationDemo.c in Sources */ = {isa = PBXBuildFile; fileRef = 00C060661FB45BD300AC4E38 /* NSInvocationDemo.c */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		00C0605D1FB4594A00AC4E38 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		00AB7E481FB4A4D900002A85 /* LPDTriggerEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerEvent.h; sourceTree = "<group>"; };
+		00AB7E491FB4A4D900002A85 /* LPDTriggerEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerEvent.m; sourceTree = "<group>"; };
 		00C060241FB4006600AC4E38 /* ObjCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C060271FB4006600AC4E38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		00C060281FB4006600AC4E38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +43,9 @@
 		00C060331FB4006600AC4E38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00C060351FB4006600AC4E38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00C060361FB4006600AC4E38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00C0605F1FB4594A00AC4E38 /* ConmandLineDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ConmandLineDemo; sourceTree = BUILT_PRODUCTS_DIR; };
+		00C060611FB4594A00AC4E38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00C060661FB45BD300AC4E38 /* NSInvocationDemo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = NSInvocationDemo.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,13 +56,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00C0605C1FB4594A00AC4E38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00AB7E471FB4A2D900002A85 /* ConditionTriggerLog */ = {
+			isa = PBXGroup;
+			children = (
+				00AB7E481FB4A4D900002A85 /* LPDTriggerEvent.h */,
+				00AB7E491FB4A4D900002A85 /* LPDTriggerEvent.m */,
+			);
+			path = ConditionTriggerLog;
+			sourceTree = "<group>";
+		};
 		00C0601B1FB4006600AC4E38 = {
 			isa = PBXGroup;
 			children = (
 				00C060261FB4006600AC4E38 /* ObjCDemo */,
+				00C060601FB4594A00AC4E38 /* ConmandLineDemo */,
 				00C060251FB4006600AC4E38 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				00C060241FB4006600AC4E38 /* ObjCDemo.app */,
+				00C0605F1FB4594A00AC4E38 /* ConmandLineDemo */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +96,7 @@
 		00C060261FB4006600AC4E38 /* ObjCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				00AB7E471FB4A2D900002A85 /* ConditionTriggerLog */,
 				00C060271FB4006600AC4E38 /* AppDelegate.h */,
 				00C060281FB4006600AC4E38 /* AppDelegate.m */,
 				00C0602A1FB4006600AC4E38 /* ViewController.h */,
@@ -69,6 +108,15 @@
 				00C060361FB4006600AC4E38 /* main.m */,
 			);
 			path = ObjCDemo;
+			sourceTree = "<group>";
+		};
+		00C060601FB4594A00AC4E38 /* ConmandLineDemo */ = {
+			isa = PBXGroup;
+			children = (
+				00C060661FB45BD300AC4E38 /* NSInvocationDemo.c */,
+				00C060611FB4594A00AC4E38 /* main.m */,
+			);
+			path = ConmandLineDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +139,23 @@
 			productReference = 00C060241FB4006600AC4E38 /* ObjCDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		00C0605E1FB4594A00AC4E38 /* ConmandLineDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00C060651FB4594A00AC4E38 /* Build configuration list for PBXNativeTarget "ConmandLineDemo" */;
+			buildPhases = (
+				00C0605B1FB4594A00AC4E38 /* Sources */,
+				00C0605C1FB4594A00AC4E38 /* Frameworks */,
+				00C0605D1FB4594A00AC4E38 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConmandLineDemo;
+			productName = ConmandLineDemo;
+			productReference = 00C0605F1FB4594A00AC4E38 /* ConmandLineDemo */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -101,6 +166,10 @@
 				ORGANIZATIONNAME = boycehe;
 				TargetAttributes = {
 					00C060231FB4006600AC4E38 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					00C0605E1FB4594A00AC4E38 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -120,6 +189,7 @@
 			projectRoot = "";
 			targets = (
 				00C060231FB4006600AC4E38 /* ObjCDemo */,
+				00C0605E1FB4594A00AC4E38 /* ConmandLineDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -144,7 +214,17 @@
 			files = (
 				00C0602C1FB4006600AC4E38 /* ViewController.m in Sources */,
 				00C060371FB4006600AC4E38 /* main.m in Sources */,
+				00AB7E4A1FB4A4D900002A85 /* LPDTriggerEvent.m in Sources */,
 				00C060291FB4006600AC4E38 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00C0605B1FB4594A00AC4E38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C060621FB4594A00AC4E38 /* main.m in Sources */,
+				00C060671FB45BD300AC4E38 /* NSInvocationDemo.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +382,30 @@
 			};
 			name = Release;
 		};
+		00C060631FB4594A00AC4E38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35326DBFMT;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		00C060641FB4594A00AC4E38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35326DBFMT;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -319,6 +423,15 @@
 			buildConfigurations = (
 				00C0603B1FB4006600AC4E38 /* Debug */,
 				00C0603C1FB4006600AC4E38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00C060651FB4594A00AC4E38 /* Build configuration list for PBXNativeTarget "ConmandLineDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00C060631FB4594A00AC4E38 /* Debug */,
+				00C060641FB4594A00AC4E38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
