@@ -7,6 +7,9 @@
 //
 
 #import "ReactiveObjCDemoViewController.h"
+#import <ReactiveObjC/RACSignal.h>
+#import <ReactiveObjC/RACDisposable.h>
+#import <ReactiveObjC/RACSubscriber.h>
 
 @interface ReactiveObjCDemoViewController ()
 
@@ -16,6 +19,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    RACSignal *signal = [RACSignal createSignal:
+                         ^RACDisposable *(id<RACSubscriber> subscriber)
+    {
+        [subscriber sendNext:@1];
+        [subscriber sendNext:@2];
+        [subscriber sendNext:@3];
+        [subscriber sendCompleted];
+        return [RACDisposable disposableWithBlock:^{
+            NSLog(@"signal dispose");
+        }];
+    }];
+    RACDisposable *disposable = [signal subscribeNext:^(id x) {
+        NSLog(@"subscribe value = %@", x);
+    } error:^(NSError *error) {
+        NSLog(@"error: %@", error);
+    } completed:^{
+        NSLog(@"completed");
+    }];
+    
+    [disposable dispose];
+    
+  
+    
     // Do any additional setup after loading the view.
 }
 
