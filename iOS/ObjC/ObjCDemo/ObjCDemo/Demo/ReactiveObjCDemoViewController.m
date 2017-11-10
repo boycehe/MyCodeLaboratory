@@ -41,9 +41,24 @@
     
     [disposable dispose];
     
+    [self testStr:@"a",@"b",@"c",@"e",@12,nil];
+    
   
     
     // Do any additional setup after loading the view.
+}
+
+- (void)testStr:(NSString*)format,...{
+    
+    va_list args;
+    va_start(args, format);
+    
+    NSString *str = [[NSString alloc] initWithFormat:format arguments:args];
+    va_end(args);
+    NSLog(@"str:%@\n",str);
+    
+    
+  
 }
 
 - (void)didReceiveMemoryWarning {
