@@ -41,7 +41,7 @@
     
     [disposable dispose];
     
-    [self testStr:@"a",@"b",@"c",@"e",@12,nil];
+    [self testStr:@"a%@%@%@",@"b",@"c",@"e",nil];
     
   
     
@@ -52,7 +52,6 @@
     
     va_list args;
     va_start(args, format);
-    
     NSString *str = [[NSString alloc] initWithFormat:format arguments:args];
     va_end(args);
     NSLog(@"str:%@\n",str);
