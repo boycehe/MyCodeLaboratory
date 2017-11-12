@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    //划水
     RACSignal *signal = [RACSignal createSignal:
                          ^RACDisposable *(id<RACSubscriber> subscriber)
     {
