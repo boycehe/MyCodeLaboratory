@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "LPDTriggerEvent.h"
 @interface LPDTriggerManager : NSObject
 + (instancetype)defualtCenterManager;
+- (void)addMonitorSEL:(SEL)selector forObj:(NSObject*)obj event:(LPDTriggerEvent*)event;
 @end

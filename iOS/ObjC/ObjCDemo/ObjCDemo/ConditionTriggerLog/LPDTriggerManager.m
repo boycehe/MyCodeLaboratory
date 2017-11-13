@@ -20,4 +20,11 @@
     return shareInstance;
     
 }
+
+- (void)addMonitorSEL:(SEL)selector forObj:(NSObject*)obj event:(LPDTriggerEvent*)event{
+    
+    
+    
+    
+}
 @end
