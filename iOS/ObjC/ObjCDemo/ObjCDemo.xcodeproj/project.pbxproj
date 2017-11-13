@@ -17,6 +17,7 @@
 		00C060371FB4006600AC4E38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C060361FB4006600AC4E38 /* main.m */; };
 		00C060621FB4594A00AC4E38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C060611FB4594A00AC4E38 /* main.m */; };
 		00C060671FB45BD300AC4E38 /* NSInvocationDemo.c in Sources */ = {isa = PBXBuildFile; fileRef = 00C060661FB45BD300AC4E38 /* NSInvocationDemo.c */; };
+		00DC96AA1FB93CF500EBB741 /* LPDTriggerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DC96A91FB93CF500EBB741 /* LPDTriggerManager.m */; };
 		880EABECCBFFFF2E64033CB9 /* libPods-ObjCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5AEEAD36B7D1138F7D645BD /* libPods-ObjCDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,8 @@
 		00C0605F1FB4594A00AC4E38 /* ConmandLineDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ConmandLineDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C060611FB4594A00AC4E38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00C060661FB45BD300AC4E38 /* NSInvocationDemo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = NSInvocationDemo.c; sourceTree = "<group>"; };
+		00DC96A81FB93CF500EBB741 /* LPDTriggerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerManager.h; sourceTree = "<group>"; };
+		00DC96A91FB93CF500EBB741 /* LPDTriggerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerManager.m; sourceTree = "<group>"; };
 		A5AEEAD36B7D1138F7D645BD /* libPods-ObjCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B76248144888C07A069B2CB1 /* Pods-ObjCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjCDemo/Pods-ObjCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		FC30A8784635B2F0CA3D13D3 /* Pods-ObjCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjCDemo/Pods-ObjCDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +82,8 @@
 			children = (
 				00AB7E481FB4A4D900002A85 /* LPDTriggerEvent.h */,
 				00AB7E491FB4A4D900002A85 /* LPDTriggerEvent.m */,
+				00DC96A81FB93CF500EBB741 /* LPDTriggerManager.h */,
+				00DC96A91FB93CF500EBB741 /* LPDTriggerManager.m */,
 			);
 			path = ConditionTriggerLog;
 			sourceTree = "<group>";
@@ -308,6 +313,7 @@
 				00AB7E4A1FB4A4D900002A85 /* LPDTriggerEvent.m in Sources */,
 				00C060291FB4006600AC4E38 /* AppDelegate.m in Sources */,
 				00AB7E4E1FB5565400002A85 /* ReactiveObjCDemoViewController.m in Sources */,
+				00DC96AA1FB93CF500EBB741 /* LPDTriggerManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

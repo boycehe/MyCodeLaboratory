@@ -10,4 +10,5 @@
 
 @interface LPDTriggerEvent : NSObject
 
+
 @end
