@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00801D541FB97D60007EAFDD /* LPDTriggerDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 00801D531FB97D60007EAFDD /* LPDTriggerDB.m */; };
 		00AB7E4A1FB4A4D900002A85 /* LPDTriggerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AB7E491FB4A4D900002A85 /* LPDTriggerEvent.m */; };
 		00AB7E4E1FB5565400002A85 /* ReactiveObjCDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AB7E4D1FB5565400002A85 /* ReactiveObjCDemoViewController.m */; };
 		00C060291FB4006600AC4E38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C060281FB4006600AC4E38 /* AppDelegate.m */; };
@@ -34,6 +35,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00801D521FB97D60007EAFDD /* LPDTriggerDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerDB.h; sourceTree = "<group>"; };
+		00801D531FB97D60007EAFDD /* LPDTriggerDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerDB.m; sourceTree = "<group>"; };
 		00AB7E481FB4A4D900002A85 /* LPDTriggerEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerEvent.h; sourceTree = "<group>"; };
 		00AB7E491FB4A4D900002A85 /* LPDTriggerEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerEvent.m; sourceTree = "<group>"; };
 		00AB7E4C1FB5565400002A85 /* ReactiveObjCDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveObjCDemoViewController.h; sourceTree = "<group>"; };
@@ -81,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				00AB7E481FB4A4D900002A85 /* LPDTriggerEvent.h */,
+				00801D521FB97D60007EAFDD /* LPDTriggerDB.h */,
+				00801D531FB97D60007EAFDD /* LPDTriggerDB.m */,
 				00AB7E491FB4A4D900002A85 /* LPDTriggerEvent.m */,
 				00DC96A81FB93CF500EBB741 /* LPDTriggerManager.h */,
 				00DC96A91FB93CF500EBB741 /* LPDTriggerManager.m */,
@@ -312,6 +317,7 @@
 				00C060371FB4006600AC4E38 /* main.m in Sources */,
 				00AB7E4A1FB4A4D900002A85 /* LPDTriggerEvent.m in Sources */,
 				00C060291FB4006600AC4E38 /* AppDelegate.m in Sources */,
+				00801D541FB97D60007EAFDD /* LPDTriggerDB.m in Sources */,
 				00AB7E4E1FB5565400002A85 /* ReactiveObjCDemoViewController.m in Sources */,
 				00DC96AA1FB93CF500EBB741 /* LPDTriggerManager.m in Sources */,
 			);
