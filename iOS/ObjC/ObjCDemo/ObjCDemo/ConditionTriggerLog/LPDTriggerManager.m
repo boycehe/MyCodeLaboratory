@@ -18,8 +18,16 @@
 
 @implementation LPDTriggerManager
 
-void eventStatisticAnalyse(id self,SEL _cmd ,int age){
+void eventStatisticAnalyse(id self,SEL _cmd ,...){
  
+    Class currentCls = [self class];
+    object_setClass(self, class_getSuperclass([self class]));
+    objc_msgSend(self,@selector(ff),1);
+    id objc = objc_getAssociatedObject(self, (__bridge const void*)@"objc");
+    //通知观察者 执行方法
+    objc_msgSend(objc, @selector(observeValueForKeyPath:ofObject:change:context:),self,@"age", nil, nil);
+    //再把当前类改成子类
+    object_setClass(self, currentCls);
     
     
     
@@ -48,11 +56,13 @@ void eventStatisticAnalyse(id self,SEL _cmd ,int age){
 
 - (void)addMonitorSEL:(SEL)selector forObj:(NSObject*)obj event:(LPDTriggerEvent*)event{
     
+  
     NSString *targetCls = NSStringFromClass([obj class]);
+    Method originalMethod = class_getInstanceMethod([obj class], selector);
     NSString *newCls    = [@"lpdTM_" stringByAppendingString:targetCls];
     const char *name = [newCls UTF8String];
     Class    nCls = objc_allocateClassPair([obj class], name, 0);
-    class_addMethod(nCls, selector, (IMP)eventStatisticAnalyse, "v@;i");
+    class_addMethod(nCls, selector, (IMP)eventStatisticAnalyse, method_getTypeEncoding(originalMethod));
     objc_registerClassPair(nCls);
     object_setClass(obj, nCls);
     

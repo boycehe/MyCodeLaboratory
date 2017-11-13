@@ -84,9 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				00AB7E481FB4A4D900002A85 /* LPDTriggerEvent.h */,
+				00AB7E491FB4A4D900002A85 /* LPDTriggerEvent.m */,
 				00801D521FB97D60007EAFDD /* LPDTriggerDB.h */,
 				00801D531FB97D60007EAFDD /* LPDTriggerDB.m */,
-				00AB7E491FB4A4D900002A85 /* LPDTriggerEvent.m */,
 				00DC96A81FB93CF500EBB741 /* LPDTriggerManager.h */,
 				00DC96A91FB93CF500EBB741 /* LPDTriggerManager.m */,
 			);
@@ -465,6 +465,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35326DBFMT;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = ObjCDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dream.demo.ObjCDemo;
@@ -480,6 +481,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35326DBFMT;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = ObjCDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dream.demo.ObjCDemo;
