@@ -1,0 +1,12 @@
+.DS_Store
+LPDCrowdsource.xcodeproj/xcuserdata/
+LPDCrowdsource.xcworkspace/xcuserdata/
+*.xccheckout
+*.perspectivev3
+*.moved-aside
+*.swp
+build/
+DerivedData/
+Pods/
+LPDCrowdsource.xcodeproj/project.xcworkspace/xcuserdata/shenqiang.xcuserdatad/UserInterfaceState.xcuserstate
+LPDCrowdsource.xcworkspace/xcshareddata/LPDCrowdsource.xcscmblueprint

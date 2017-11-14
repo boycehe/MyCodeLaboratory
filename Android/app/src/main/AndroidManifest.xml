@@ -374,7 +374,10 @@
             android:name=".Chapter9.DictProvider"
             android:authorities="org.crazyit.providers.dictprovider"
             android:enabled="true"
-            android:exported="true"></provider>
+            android:exported="true" />
+
+        <activity android:name=".Chapter9.DictResolverActivity" />
+        <activity android:name=".Chapter9.ContactContentProviderActivity"></activity>
     </application>
 
 </manifest>
