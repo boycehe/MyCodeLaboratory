@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <JavaScriptCore/JavaScriptCore.h>
+#import "LPDTriggerManager.h"
 
 @interface ViewController ()
 
@@ -16,47 +17,22 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
-    JSContext *context = [[JSContext alloc] init];
-    context[@"sumNums"] = ^(NSInteger a,NSInteger b,NSInteger c){
-    NSLog(@"%@_%@_Success",[self class],NSStringFromSelector(_cmd));
-        return [self sumWithA:a B:b C:c];
-    };
+   
+   NSLog(@"viewDidLoad--");
     
+   [[LPDTriggerManager defualtCenterManager] addMonitorSEL:@selector(sumWithA:B:C:) forObj:self event:nil];
     
-    JSValue *sum = [context evaluateScript:@"sumNums(7,56,22)"];
-    NSLog(@"sum=%@",sum);
-    
-    SEL sel = @selector(sumWithA:B:C:);
-    NSMethodSignature *methodSignature = [self methodSignatureForSelector:sel];
-    NSInvocation *invo = [NSInvocation invocationWithMethodSignature:methodSignature];
-    [invo setTarget:self];
-    [invo setSelector:sel];
-    NSInteger a = 1,b = 2,c = 3;
-    void *arg2 = &a;
-    void *arg3 = &b;
-    void *arg4 = &c;
-    [invo setArgument:arg2 atIndex:2];
-    [invo setArgument:arg3 atIndex:3];
-    [invo setArgument:arg4 atIndex:4];
-    
-    [invo invoke];
-    
-    void *retP = malloc(sizeof(NSInteger));
-    [invo getReturnValue:retP];
-    NSInteger ret = *((NSInteger*)retP);
-    free(retP);
-    NSLog(@"ret=%zd",ret);
-    
-    
-    
+    [NSThread sleepForTimeInterval:2];
+
+    [self sumWithA:1 B:2 C:3];
 }
 
-- (NSInteger)sumWithA:(NSInteger)a B:(NSInteger)b C:(NSInteger)c{
+- (BOOL)sumWithA:(NSInteger)a B:(NSInteger)b C:(NSInteger)c{
     
-    return a+b+c;
-    
+    return NO;
     
 }
 

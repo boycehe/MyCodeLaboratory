@@ -10,4 +10,6 @@
 
 @interface LPDTriggerDB : NSObject
 
+- (void)writeLog:(NSString*)log;
+
 @end
