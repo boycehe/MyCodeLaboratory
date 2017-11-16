@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <JavaScriptCore/JavaScriptCore.h>
 #import "LPDTriggerManager.h"
+#import "son.h"
 
 @interface ViewController ()
 
@@ -16,18 +17,32 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     
     [super viewDidLoad];
     
+ //   [son objCls];
+    
+    NSString *name = NSStringFromClass([son class]);
+    NSLog(@"name:%@",name);
    
    NSLog(@"viewDidLoad--");
     
-   [[LPDTriggerManager defualtCenterManager] addMonitorSEL:@selector(sumWithA:B:C:) forObj:self event:nil];
+   //[[LPDTriggerManager defualtCenterManager] addMonitorSEL:@selector(sumWithA:B:C:) forObj:self event:nil];
+    [[LPDTriggerManager defualtCenterManager] addMonitorSEL:@selector(test) forCls:[self class] event:nil];
+  //  [NSThread sleepForTimeInterval:2];
     
-    [NSThread sleepForTimeInterval:2];
+   
 
-    [self sumWithA:1 B:2 C:3];
+   [ViewController test];
+  //  [self sumWithA:1 B:2 C:3];
+}
+
++ (void)test{
+    
+    NSLog(@"bafafafa");
+    
 }
 
 - (BOOL)sumWithA:(NSInteger)a B:(NSInteger)b C:(NSInteger)c{

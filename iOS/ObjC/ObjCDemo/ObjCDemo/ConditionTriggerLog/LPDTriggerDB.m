@@ -10,4 +10,21 @@
 
 @implementation LPDTriggerDB
 
++ (instancetype)defaultDB{
+    
+    return nil;
+}
+
+- (instancetype)init{
+    
+    self = [super init];
+    
+    return self;
+    
+}
+
+- (void)writeLog:(NSString*)log{
+    
+}
+
 @end

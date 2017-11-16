@@ -9,14 +9,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/ReactiveObjC/ReactiveObjC/RACStream.m"
-            timestampString = "531981785.107114"
+            filePath = "ObjCDemo/ConditionTriggerLog/LPDTriggerManager.m"
+            timestampString = "532456032.014513"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "-setNameWithFormat:"
-            landmarkType = "7">
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "eventInstanceStatisticAnalyse"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -25,13 +25,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/ReactiveObjC/ReactiveObjC/RACStream.m"
-            timestampString = "531981785.10718"
+            filePath = "ObjCDemo/ConditionTriggerLog/LPDTriggerManager.m"
+            timestampString = "532456032.014884"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "-setNameWithFormat:"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "eventInstanceStatisticAnalyse"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ObjCDemo/ConditionTriggerLog/LPDTriggerManager.m"
+            timestampString = "532456032.015127"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
+            landmarkName = "-addMonitorSEL:forCls:event:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

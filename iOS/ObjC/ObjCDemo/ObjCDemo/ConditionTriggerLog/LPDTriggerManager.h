@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "LPDTriggerEvent.h"
 
-#define LPDTriggerEventSuccess  [[LPDTriggerManager defualtCenterManager] \
+#define LPDTriggerSendSuccessEvent  [[LPDTriggerManager defualtCenterManager] \
                                 eventWithValue:LPDTriggerEventValueSuccess \
                                 forClass:[self Class] Sel:_cmd]
 
-#define LPDTriggerEventFail     [[LPDTriggerManager defualtCenterManager] \
+#define LPDTriggerSendFailEvent     [[LPDTriggerManager defualtCenterManager] \
                                 eventWithValue:LPDTriggerEventValueFail \
                                 forClass:[self Class] Sel:_cmd]
 
@@ -21,6 +21,11 @@
 @interface LPDTriggerManager : NSObject
 
 + (instancetype)defualtCenterManager;
+
+- (void)addMonitorSEL:(SEL)selector forCls:(Class)cls event:(LPDTriggerEvent*)event;
+
 - (void)addMonitorSEL:(SEL)selector forObj:(NSObject*)obj event:(LPDTriggerEvent*)event;
-- (void)eventWithValue:(LPDTriggerEventValue)value forClass:(Class)cls Sel:(SEL)selctor;
+
+- (void)eventWithValue:(LPDTriggerEventValue)value forCls:(Class)cls Sel:(SEL)selctor;
+
 @end

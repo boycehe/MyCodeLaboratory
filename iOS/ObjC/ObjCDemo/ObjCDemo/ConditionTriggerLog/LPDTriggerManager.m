@@ -39,7 +39,7 @@
 
 #define LPDTriggerSuccessSuffix   @"success"
 #define LPDTriggerFailSuffix      @"fail"
-#define LPDTriggerClassPrefix     @"lpdTM_"
+#define LPDTriggerClassPrefix     @"lpdBrYsJ_"
 
 @interface LPDTriggerManager()
 @property (nonatomic,strong) NSMutableDictionary         *notificationStoreDic;
@@ -89,7 +89,29 @@ LPDReturnType returnType(char *dst){
 
 }
 
-void eventStatisticAnalyse(id self,SEL _cmd ,va_list argp){
+void eventClassStatisticAnalyse(id self,SEL _cmd ,va_list argp){
+    
+     Class currentCls = [self class];
+     char dst;
+     Method method = class_getClassMethod(currentCls,_cmd);
+     method_getReturnType(method, &dst, sizeof(char));
+     LPDReturnType retType = returnType(&dst);
+     Class superCls = class_getSuperclass(self);
+     Class metaClass = objc_getMetaClass(class_getName(self));
+
+    SEL oSel =  NSSelectorFromString([@"MM_" stringByAppendingString:NSStringFromSelector(_cmd)]);
+    
+    if (retType == LPDReturnTypeBOOL) {
+        bool ret = ((BOOL(*)(id, SEL, va_list))(void *)objc_msgSend)(self, oSel,argp);
+    }else{
+        objc_msgSend(self,oSel,argp);
+    }
+    
+   // object_setClass(self, metaClass);
+    
+}
+
+void eventInstanceStatisticAnalyse(id self,SEL _cmd ,va_list argp){
  
     Class currentCls = [self class];
     char dst;
@@ -98,10 +120,13 @@ void eventStatisticAnalyse(id self,SEL _cmd ,va_list argp){
     LPDReturnType retType = returnType(&dst);
     object_setClass(self, class_getSuperclass([self class]));
     
+    NSLog(@"eventInstanceStatisticAnalyse");
+    
+   
     if (retType == LPDReturnTypeBOOL) {
         bool ret = ((BOOL(*)(id, SEL, va_list))(void *)objc_msgSend)(self, _cmd,argp);
     }else{
-        objc_msgSend(self, _cmd,argp);
+        objc_msgSend(self,_cmd,argp);
     }
     
     object_setClass(self, currentCls);
@@ -138,16 +163,47 @@ void eventStatisticAnalyse(id self,SEL _cmd ,va_list argp){
     
 }
 
+- (void)addMonitorSEL:(SEL)selector forCls:(Class)cls event:(LPDTriggerEvent*)event{
+    
+    Class nCls = [self classWithName:cls];
+    Method orginMethod = class_getClassMethod(cls, selector);
+    Class metaCls = objc_getMetaClass(class_getName(cls));
+    NSString *nSelector = [@"MM_" stringByAppendingString:NSStringFromSelector(selector)];
+    SEL nSel = NSSelectorFromString(nSelector);
+    class_addMethod(metaCls,nSel,(IMP)eventClassStatisticAnalyse,method_getTypeEncoding(orginMethod));
+    Method nMethod = class_getClassMethod(cls, nSel);
+    method_exchangeImplementations(orginMethod,nMethod);
+    
+  
+}
+
 - (void)addMonitorSEL:(SEL)selector forObj:(NSObject*)obj event:(LPDTriggerEvent*)event{
     
-    NSString *targetCls = NSStringFromClass([obj class]);
-    Method originalMethod = class_getInstanceMethod([obj class], selector);
-    NSString *newCls    = [LPDTriggerClassPrefix stringByAppendingString:targetCls];
-    const char *name = [newCls UTF8String];
-    Class    nCls = objc_allocateClassPair([obj class], name, 0);
-    class_addMethod(nCls, selector, (IMP)eventStatisticAnalyse, method_getTypeEncoding(originalMethod));
-    objc_registerClassPair(nCls);
+    Class orginCls        = [obj class];
+    Method originalMethod = class_getInstanceMethod(orginCls, selector);
+    Class    nCls         = [self classWithName:orginCls];
+    class_addMethod(nCls, selector, (IMP)eventInstanceStatisticAnalyse, method_getTypeEncoding(originalMethod));
     object_setClass(obj, nCls);
     
 }
+
+- (Class)classWithName:(Class)orginCls{
+    
+    NSString *clsName = [LPDTriggerClassPrefix stringByAppendingString:NSStringFromClass(orginCls)];
+    Class clazz = NSClassFromString(clsName);
+
+    if (clazz) {
+        return clazz;
+    }
+
+    const char *name = [clsName UTF8String];
+    Class    nCls = objc_allocateClassPair([orginCls class], name, 0);
+    objc_registerClassPair(nCls);
+    
+    
+   
+    return  nCls;
+    
+}
+
 @end

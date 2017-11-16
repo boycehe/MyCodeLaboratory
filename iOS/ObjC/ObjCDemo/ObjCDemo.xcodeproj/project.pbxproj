@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		00801D541FB97D60007EAFDD /* LPDTriggerDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 00801D531FB97D60007EAFDD /* LPDTriggerDB.m */; };
+		00A212EB1FBC44BC00236AEA /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A212EA1FBC44BC00236AEA /* Father.m */; };
+		00A212EE1FBC44CF00236AEA /* son.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A212ED1FBC44CF00236AEA /* son.m */; };
 		00AB7E4A1FB4A4D900002A85 /* LPDTriggerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AB7E491FB4A4D900002A85 /* LPDTriggerEvent.m */; };
 		00AB7E4E1FB5565400002A85 /* ReactiveObjCDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AB7E4D1FB5565400002A85 /* ReactiveObjCDemoViewController.m */; };
 		00C060291FB4006600AC4E38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C060281FB4006600AC4E38 /* AppDelegate.m */; };
@@ -37,6 +39,10 @@
 /* Begin PBXFileReference section */
 		00801D521FB97D60007EAFDD /* LPDTriggerDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerDB.h; sourceTree = "<group>"; };
 		00801D531FB97D60007EAFDD /* LPDTriggerDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerDB.m; sourceTree = "<group>"; };
+		00A212E91FBC44BC00236AEA /* Father.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
+		00A212EA1FBC44BC00236AEA /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
+		00A212EC1FBC44CF00236AEA /* son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = son.h; sourceTree = "<group>"; };
+		00A212ED1FBC44CF00236AEA /* son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = son.m; sourceTree = "<group>"; };
 		00AB7E481FB4A4D900002A85 /* LPDTriggerEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerEvent.h; sourceTree = "<group>"; };
 		00AB7E491FB4A4D900002A85 /* LPDTriggerEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerEvent.m; sourceTree = "<group>"; };
 		00AB7E4C1FB5565400002A85 /* ReactiveObjCDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveObjCDemoViewController.h; sourceTree = "<group>"; };
@@ -131,6 +137,10 @@
 				00C060281FB4006600AC4E38 /* AppDelegate.m */,
 				00C0602A1FB4006600AC4E38 /* ViewController.h */,
 				00C0602B1FB4006600AC4E38 /* ViewController.m */,
+				00A212E91FBC44BC00236AEA /* Father.h */,
+				00A212EA1FBC44BC00236AEA /* Father.m */,
+				00A212EC1FBC44CF00236AEA /* son.h */,
+				00A212ED1FBC44CF00236AEA /* son.m */,
 				00C0602D1FB4006600AC4E38 /* Main.storyboard */,
 				00C060301FB4006600AC4E38 /* Assets.xcassets */,
 				00C060321FB4006600AC4E38 /* LaunchScreen.storyboard */,
@@ -313,11 +323,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A212EE1FBC44CF00236AEA /* son.m in Sources */,
 				00C0602C1FB4006600AC4E38 /* ViewController.m in Sources */,
 				00C060371FB4006600AC4E38 /* main.m in Sources */,
 				00AB7E4A1FB4A4D900002A85 /* LPDTriggerEvent.m in Sources */,
 				00C060291FB4006600AC4E38 /* AppDelegate.m in Sources */,
 				00801D541FB97D60007EAFDD /* LPDTriggerDB.m in Sources */,
+				00A212EB1FBC44BC00236AEA /* Father.m in Sources */,
 				00AB7E4E1FB5565400002A85 /* ReactiveObjCDemoViewController.m in Sources */,
 				00DC96AA1FB93CF500EBB741 /* LPDTriggerManager.m in Sources */,
 			);
