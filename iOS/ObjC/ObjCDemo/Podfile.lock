@@ -1,12 +1,17 @@
 PODS:
   - ReactiveObjC (3.0.0)
+  - Realm (3.0.1):
+    - Realm/Headers (= 3.0.1)
+  - Realm/Headers (3.0.1)
 
 DEPENDENCIES:
   - ReactiveObjC
+  - Realm
 
 SPEC CHECKSUMS:
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
+  Realm: ba6144c74f835f7497791f6599d63a7755377b83
 
-PODFILE CHECKSUM: 5c9f23bfbe7ce21d0b3cb5f76f7f49ffdf535259
+PODFILE CHECKSUM: 331b8d88f822b3acac6b84d658533d08ebff8531
 
 COCOAPODS: 1.4.0.beta.2
