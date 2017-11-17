@@ -4,6 +4,7 @@ inhibit_all_warnings! #不显示编译时的警告
 def mainPods
 	pod 'ReactiveObjC'
     pod 'Realm'
+    pod 'AVOSCloud'
 end
 
 target 'ObjCDemo' do

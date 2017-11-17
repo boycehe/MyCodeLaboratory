@@ -6,12 +6,14 @@
 //  Copyright © 2017年 boycehe. All rights reserved.
 //
 
+
 #import <Foundation/Foundation.h>
+#import "LPDTriggerEvent.h"
 
 @interface LPDTriggerDB : NSObject
 
 + (instancetype)defaultDB;
 
-- (void)writeLog:(NSString*)log key:(NSString*)key;
+
 
 @end

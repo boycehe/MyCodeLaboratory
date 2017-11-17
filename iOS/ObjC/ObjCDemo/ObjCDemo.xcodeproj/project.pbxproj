@@ -22,6 +22,7 @@
 		00C060671FB45BD300AC4E38 /* NSInvocationDemo.c in Sources */ = {isa = PBXBuildFile; fileRef = 00C060661FB45BD300AC4E38 /* NSInvocationDemo.c */; };
 		00DC96AA1FB93CF500EBB741 /* LPDTriggerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DC96A91FB93CF500EBB741 /* LPDTriggerManager.m */; };
 		00E456BC1FBE8EA50098726C /* LPDTriggerLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E456BB1FBE8EA50098726C /* LPDTriggerLogModel.m */; };
+		00E456BF1FBEA4D90098726C /* LPDTriggerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E456BE1FBEA4D90098726C /* LPDTriggerUtils.m */; };
 		880EABECCBFFFF2E64033CB9 /* libPods-ObjCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5AEEAD36B7D1138F7D645BD /* libPods-ObjCDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,8 @@
 		00DC96A91FB93CF500EBB741 /* LPDTriggerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerManager.m; sourceTree = "<group>"; };
 		00E456BA1FBE8EA50098726C /* LPDTriggerLogModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerLogModel.h; sourceTree = "<group>"; };
 		00E456BB1FBE8EA50098726C /* LPDTriggerLogModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerLogModel.m; sourceTree = "<group>"; };
+		00E456BD1FBEA4D90098726C /* LPDTriggerUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerUtils.h; sourceTree = "<group>"; };
+		00E456BE1FBEA4D90098726C /* LPDTriggerUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerUtils.m; sourceTree = "<group>"; };
 		A5AEEAD36B7D1138F7D645BD /* libPods-ObjCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B76248144888C07A069B2CB1 /* Pods-ObjCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjCDemo/Pods-ObjCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		FC30A8784635B2F0CA3D13D3 /* Pods-ObjCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjCDemo/Pods-ObjCDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				00DC96A91FB93CF500EBB741 /* LPDTriggerManager.m */,
 				00E456BA1FBE8EA50098726C /* LPDTriggerLogModel.h */,
 				00E456BB1FBE8EA50098726C /* LPDTriggerLogModel.m */,
+				00E456BD1FBEA4D90098726C /* LPDTriggerUtils.h */,
+				00E456BE1FBEA4D90098726C /* LPDTriggerUtils.m */,
 			);
 			path = ConditionTriggerLog;
 			sourceTree = "<group>";
@@ -279,9 +284,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ObjCDemo/Pods-ObjCDemo-resources.sh",
+				"${PODS_ROOT}/AVOSCloud/AVOS/AVOSCloud/AVOSCloud_Art.inc",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -330,6 +338,7 @@
 			files = (
 				00A212EE1FBC44CF00236AEA /* son.m in Sources */,
 				00C0602C1FB4006600AC4E38 /* ViewController.m in Sources */,
+				00E456BF1FBEA4D90098726C /* LPDTriggerUtils.m in Sources */,
 				00C060371FB4006600AC4E38 /* main.m in Sources */,
 				00AB7E4A1FB4A4D900002A85 /* LPDTriggerEvent.m in Sources */,
 				00C060291FB4006600AC4E38 /* AppDelegate.m in Sources */,

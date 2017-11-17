@@ -19,6 +19,9 @@ typedef NS_ENUM(NSUInteger, LPDTriggerEventValue) {
 };
 
 @interface LPDTriggerEvent : NSObject
+@property (nonatomic,assign,readonly) LPDTriggerEventType         type;
+@property (nonatomic,assign,readonly) NSInteger                   count;
+@property (nonatomic,assign,readonly) NSTimeInterval              interval;
 
 /**
  * @param type      事件的类型

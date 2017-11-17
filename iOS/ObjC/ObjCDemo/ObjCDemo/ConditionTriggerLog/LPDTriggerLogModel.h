@@ -7,29 +7,43 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Realm/Realm.h>
+#import "LPDTriggerEvent.h"
 
-@interface LPDTriggerLogModel : NSObject
-@property (nonatomic,copy) NSString         *logId;
+@interface LPDTriggerLogModel : RLMObject
+@property  NSString         *logId;
 /**
  *骑手的账号，手机型号，网络环境 ，app版本，系统版本
  */
-@property (nonatomic,copy) NSString         *baseInfo;
+@property NSString         *baseInfo;
 /**
  * 发生时候的时间戳
  */
-@property (nonatomic,assign) NSTimeInterval         eventTimestamp;
+@property NSTimeInterval         eventTimestamp;
 /**
  * 事件类型
  */
-@property (nonatomic,assign) NSInteger              eventType;
+@property NSInteger              eventType;
 /**
  * 是否已经上传
  */
-@property (nonatomic,assign) BOOL                   isUpload;
+@property BOOL                   isUpload;
 /**
  * 错误描述信息
  */
-@property (nonatomic,copy) NSString                *extInfo;
+@property NSString                *extInfo;
+/**
+ * 触发上传的阈值的次数
+ */
+@property NSInteger                count;
+/**
+ * 触发上传时间段阈值
+ */
+@property NSTimeInterval            peroidTime;
 
+/**
+ * 是否忽略掉该条记录
+ */
+@property BOOL                      isIgnore;
 
 @end

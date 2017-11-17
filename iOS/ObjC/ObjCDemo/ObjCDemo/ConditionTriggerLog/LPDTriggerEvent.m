@@ -9,9 +9,7 @@
 #import "LPDTriggerEvent.h"
 
 @interface LPDTriggerEvent()
-@property (nonatomic,assign) LPDTriggerEventType         type;
-@property (nonatomic,assign) NSInteger                   count;
-@property (nonatomic,assign) NSTimeInterval              interval;
+
 @end
 
 @implementation LPDTriggerEvent
@@ -20,9 +18,9 @@
     
     LPDTriggerEvent *event = [[LPDTriggerEvent alloc] init];
     
-    event.type      = type;
-    event.count     = count;
-    event.interval  = interval;
+    event->_type      = type;
+    event->_count     = count;
+    event->_interval  = interval;
     
     return event;
 }
