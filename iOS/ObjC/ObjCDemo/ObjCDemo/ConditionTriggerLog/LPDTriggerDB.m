@@ -132,6 +132,15 @@
         return;
     }
     
+    NSSortDescriptor *descriptor = [NSSortDescriptor sortDescriptorWithKey:@"eventTimestamp"
+                                                                 ascending:YES];
+    
+    NSMutableArray *tArr =  nil;
+
+  /*
+    NSArray *results = [existModel
+                        sortedArrayUsingDescriptors:[NSArray arrayWithObject:descriptor]];
+    */
     LPDTriggerLogModel *firstModel = existModel.firstObject;
     
     if (firstModel.count < existModel.count) {
