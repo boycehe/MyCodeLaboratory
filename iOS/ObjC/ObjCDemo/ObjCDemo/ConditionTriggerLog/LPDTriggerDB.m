@@ -52,6 +52,8 @@
     int currentVersion = 1.0;
     config.schemaVersion = currentVersion;
     
+    NSLog(@"realm path:%@",filePath);
+    
     config.migrationBlock = ^(RLMMigration *migration , uint64_t oldSchemaVersion) {
         // 这里是设置数据迁移的block
         if (oldSchemaVersion < currentVersion) {
@@ -140,13 +142,24 @@
         return;
     }
     
-    for (NSInteger index = 0; index < existModel.count; index++) {
+    for (NSInteger index = sortResults.count - 1; index >= sortResults.count - firstModel.count; index--) {
         
-        LPDTriggerLogModel *model = [existModel objectAtIndex:index];
+        LPDTriggerLogModel *model1 = [sortResults objectAtIndex:index];
         
-        NSLog(@"%zd---time:%f",index,model.eventTimestamp);
-        
+        NSLog(@"%zd---time:%f",index,model1.eventTimestamp);
     }
+    
+    LPDTriggerLogModel *topModel = [sortResults objectAtIndex:sortResults.count-1];
+    LPDTriggerLogModel *bottomCountModel = [sortResults objectAtIndex:sortResults.count-firstModel.count];
+    NSLog(@"top:%f---bottom:%f",topModel.eventTimestamp,bottomCountModel.eventTimestamp);
+    
+    if (topModel.eventTimestamp - bottomCountModel.eventTimestamp <= firstModel.peroidTime) {
+        NSLog(@"符合要求，准备上传");
+    }
+    
+   
+    
+    
 
 }
 

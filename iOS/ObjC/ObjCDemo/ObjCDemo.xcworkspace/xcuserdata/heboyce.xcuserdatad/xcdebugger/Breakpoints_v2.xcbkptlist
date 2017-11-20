@@ -10,13 +10,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ObjCDemo/ConditionTriggerLog/LPDTriggerManager.m"
-            timestampString = "532456032.014513"
+            timestampString = "532855300.568994"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "126"
             endingLineNumber = "126"
             landmarkName = "eventInstanceStatisticAnalyse"
             landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eventInstanceStatisticAnalyse"
+                  moduleName = "ObjCDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/heboyce/Desktop/Study/MyMobileLaboratory/iOS/ObjC/ObjCDemo/ObjCDemo/ConditionTriggerLog/LPDTriggerManager.m"
+                  timestampString = "532856512.645319"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "204">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eventInstanceStatisticAnalyse"
+                  moduleName = "ObjCDemoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/heboyce/Desktop/Study/MyMobileLaboratory/iOS/ObjC/ObjCDemo/ObjCDemo/ConditionTriggerLog/LPDTriggerManager.m"
+                  timestampString = "532856513.297123"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "204">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,13 +58,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ObjCDemo/ConditionTriggerLog/LPDTriggerManager.m"
-            timestampString = "532456032.014884"
+            timestampString = "532855300.569117"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "120"
             endingLineNumber = "120"
             landmarkName = "eventInstanceStatisticAnalyse"
             landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eventInstanceStatisticAnalyse"
+                  moduleName = "ObjCDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/heboyce/Desktop/Study/MyMobileLaboratory/iOS/ObjC/ObjCDemo/ObjCDemo/ConditionTriggerLog/LPDTriggerManager.m"
+                  timestampString = "532856512.6509"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "127">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eventInstanceStatisticAnalyse"
+                  moduleName = "ObjCDemoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/heboyce/Desktop/Study/MyMobileLaboratory/iOS/ObjC/ObjCDemo/ObjCDemo/ConditionTriggerLog/LPDTriggerManager.m"
+                  timestampString = "532856513.298854"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "127">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,13 +106,157 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ObjCDemo/ConditionTriggerLog/LPDTriggerManager.m"
-            timestampString = "532456032.015127"
+            timestampString = "532855300.569178"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "173"
             endingLineNumber = "173"
             landmarkName = "-addMonitorSEL:forCls:event:"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LPDTriggerManager addMonitorSEL:forCls:event:]"
+                  moduleName = "ObjCDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/heboyce/Desktop/Study/MyMobileLaboratory/iOS/ObjC/ObjCDemo/ObjCDemo/ConditionTriggerLog/LPDTriggerManager.m"
+                  timestampString = "532856512.654159"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "173"
+                  endingLineNumber = "173"
+                  offsetFromSymbolStart = "198">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LPDTriggerManager addMonitorSEL:forCls:event:]"
+                  moduleName = "ObjCDemoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/heboyce/Desktop/Study/MyMobileLaboratory/iOS/ObjC/ObjCDemo/ObjCDemo/ConditionTriggerLog/LPDTriggerManager.m"
+                  timestampString = "532856513.300766"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "173"
+                  endingLineNumber = "173"
+                  offsetFromSymbolStart = "198">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ObjCDemoTests/ObjCDemoTests.m"
+            timestampString = "532857315.483852"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "-testExample"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ObjCDemo/ConditionTriggerLog/LPDTriggerDB.m"
+            timestampString = "532857315.484205"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "-creatDataBaseWithName:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LPDTriggerDB creatDataBaseWithName:]"
+                  moduleName = "ObjCDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/heboyce/Desktop/Study/MyMobileLaboratory/iOS/ObjC/ObjCDemo/ObjCDemo/ConditionTriggerLog/LPDTriggerDB.m"
+                  timestampString = "532856512.657893"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "433">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LPDTriggerDB creatDataBaseWithName:]"
+                  moduleName = "ObjCDemoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/heboyce/Desktop/Study/MyMobileLaboratory/iOS/ObjC/ObjCDemo/ObjCDemo/ConditionTriggerLog/LPDTriggerDB.m"
+                  timestampString = "532856513.304838"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "433">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ObjCDemo/ConditionTriggerLog/LPDTriggerDB.m"
+            timestampString = "532857315.484267"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "-checkAndUploadWithModel:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LPDTriggerDB checkAndUploadWithModel:]"
+                  moduleName = "ObjCDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/heboyce/Desktop/Study/MyMobileLaboratory/iOS/ObjC/ObjCDemo/ObjCDemo/ConditionTriggerLog/LPDTriggerDB.m"
+                  timestampString = "532856512.660664"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LPDTriggerDB checkAndUploadWithModel:]"
+                  moduleName = "ObjCDemoTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/heboyce/Desktop/Study/MyMobileLaboratory/iOS/ObjC/ObjCDemo/ObjCDemo/ConditionTriggerLog/LPDTriggerDB.m"
+                  timestampString = "532856513.306792"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "42">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

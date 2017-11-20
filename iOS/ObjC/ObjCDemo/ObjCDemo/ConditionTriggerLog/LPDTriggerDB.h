@@ -9,11 +9,14 @@
 
 #import <Foundation/Foundation.h>
 #import "LPDTriggerEvent.h"
+@class LPDTriggerLogModel;
 
 @interface LPDTriggerDB : NSObject
 
 + (instancetype)defaultDB;
 
 + (void)testDatas;
+
+- (void)checkAndUploadWithModel:(LPDTriggerLogModel*)model;
 
 @end

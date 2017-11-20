@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		006850931FC2B28600C71CED /* ObjCDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 006850921FC2B28600C71CED /* ObjCDemoTests.m */; };
+		0068509A1FC2B3CC00C71CED /* LPDTriggerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AB7E491FB4A4D900002A85 /* LPDTriggerEvent.m */; };
+		0068509B1FC2B3D000C71CED /* LPDTriggerDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 00801D531FB97D60007EAFDD /* LPDTriggerDB.m */; };
+		0068509C1FC2B3D300C71CED /* LPDTriggerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DC96A91FB93CF500EBB741 /* LPDTriggerManager.m */; };
+		0068509D1FC2B3D600C71CED /* LPDTriggerLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E456BB1FBE8EA50098726C /* LPDTriggerLogModel.m */; };
+		0068509E1FC2B3D900C71CED /* LPDTriggerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E456BE1FBEA4D90098726C /* LPDTriggerUtils.m */; };
 		00801D541FB97D60007EAFDD /* LPDTriggerDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 00801D531FB97D60007EAFDD /* LPDTriggerDB.m */; };
 		00A212EB1FBC44BC00236AEA /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A212EA1FBC44BC00236AEA /* Father.m */; };
 		00A212EE1FBC44CF00236AEA /* son.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A212ED1FBC44CF00236AEA /* son.m */; };
@@ -25,6 +30,7 @@
 		00E456BC1FBE8EA50098726C /* LPDTriggerLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E456BB1FBE8EA50098726C /* LPDTriggerLogModel.m */; };
 		00E456BF1FBEA4D90098726C /* LPDTriggerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E456BE1FBEA4D90098726C /* LPDTriggerUtils.m */; };
 		880EABECCBFFFF2E64033CB9 /* libPods-ObjCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5AEEAD36B7D1138F7D645BD /* libPods-ObjCDemo.a */; };
+		A55343B9835D15DD3B0ACF18 /* libPods-ObjCDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9585A9CA2CFCCE8C3ED8225C /* libPods-ObjCDemoTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,8 +88,11 @@
 		00E456BB1FBE8EA50098726C /* LPDTriggerLogModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerLogModel.m; sourceTree = "<group>"; };
 		00E456BD1FBEA4D90098726C /* LPDTriggerUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerUtils.h; sourceTree = "<group>"; };
 		00E456BE1FBEA4D90098726C /* LPDTriggerUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerUtils.m; sourceTree = "<group>"; };
+		9585A9CA2CFCCE8C3ED8225C /* libPods-ObjCDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjCDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97CE325C107304186BCAD03A /* Pods-ObjCDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjCDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjCDemoTests/Pods-ObjCDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A5AEEAD36B7D1138F7D645BD /* libPods-ObjCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B76248144888C07A069B2CB1 /* Pods-ObjCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjCDemo/Pods-ObjCDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E6826D8B22B44228BEFAC450 /* Pods-ObjCDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjCDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjCDemoTests/Pods-ObjCDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		FC30A8784635B2F0CA3D13D3 /* Pods-ObjCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjCDemo/Pods-ObjCDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A55343B9835D15DD3B0ACF18 /* libPods-ObjCDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				A5AEEAD36B7D1138F7D645BD /* libPods-ObjCDemo.a */,
+				9585A9CA2CFCCE8C3ED8225C /* libPods-ObjCDemoTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,6 +225,8 @@
 			children = (
 				B76248144888C07A069B2CB1 /* Pods-ObjCDemo.debug.xcconfig */,
 				FC30A8784635B2F0CA3D13D3 /* Pods-ObjCDemo.release.xcconfig */,
+				97CE325C107304186BCAD03A /* Pods-ObjCDemoTests.debug.xcconfig */,
+				E6826D8B22B44228BEFAC450 /* Pods-ObjCDemoTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -225,9 +238,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 006850991FC2B28600C71CED /* Build configuration list for PBXNativeTarget "ObjCDemoTests" */;
 			buildPhases = (
+				4707BB68C3544E5F440B9F5A /* [CP] Check Pods Manifest.lock */,
 				0068508C1FC2B28500C71CED /* Sources */,
 				0068508D1FC2B28500C71CED /* Frameworks */,
 				0068508E1FC2B28500C71CED /* Resources */,
+				8AD7C074C40A5A8923E07DB7 /* [CP] Embed Pods Frameworks */,
+				7A11B2835A142DBB06790EDE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -341,6 +357,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4707BB68C3544E5F440B9F5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObjCDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		54FE2D8808A09EB12EA20D65 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -359,6 +393,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjCDemo/Pods-ObjCDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7A11B2835A142DBB06790EDE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ObjCDemoTests/Pods-ObjCDemoTests-resources.sh",
+				"${PODS_ROOT}/AVOSCloud/AVOS/AVOSCloud/AVOSCloud_Art.inc",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjCDemoTests/Pods-ObjCDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		854B2C9F5F107587CCF29D9C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -372,6 +424,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjCDemo/Pods-ObjCDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AD7C074C40A5A8923E07DB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjCDemoTests/Pods-ObjCDemoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FEE042FE4E8D990D3AE36DEB /* [CP] Check Pods Manifest.lock */ = {
@@ -399,7 +466,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0068509A1FC2B3CC00C71CED /* LPDTriggerEvent.m in Sources */,
+				0068509D1FC2B3D600C71CED /* LPDTriggerLogModel.m in Sources */,
+				0068509C1FC2B3D300C71CED /* LPDTriggerManager.m in Sources */,
 				006850931FC2B28600C71CED /* ObjCDemoTests.m in Sources */,
+				0068509B1FC2B3D000C71CED /* LPDTriggerDB.m in Sources */,
+				0068509E1FC2B3D900C71CED /* LPDTriggerUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,10 +534,12 @@
 /* Begin XCBuildConfiguration section */
 		006850971FC2B28600C71CED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97CE325C107304186BCAD03A /* Pods-ObjCDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35326DBFMT;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = ObjCDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dream.demo.ObjCDemoTests;
@@ -477,10 +551,12 @@
 		};
 		006850981FC2B28600C71CED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6826D8B22B44228BEFAC450 /* Pods-ObjCDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35326DBFMT;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = ObjCDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dream.demo.ObjCDemoTests;

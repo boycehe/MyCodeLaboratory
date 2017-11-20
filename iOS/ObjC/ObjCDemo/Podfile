@@ -11,6 +11,10 @@ target 'ObjCDemo' do
 	mainPods
 end
 
+target 'ObjCDemoTests' do
+    mainPods
+end
+
 
 
 
