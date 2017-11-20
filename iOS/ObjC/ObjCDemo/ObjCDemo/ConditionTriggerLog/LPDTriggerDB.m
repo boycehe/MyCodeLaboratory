@@ -132,24 +132,23 @@
         return;
     }
     
-    NSSortDescriptor *descriptor = [NSSortDescriptor sortDescriptorWithKey:@"eventTimestamp"
-                                                                 ascending:YES];
+    RLMResults<LPDTriggerLogModel *> *sortResults = [existModel sortedResultsUsingKeyPath:@"eventTimestamp" ascending:YES];
     
-    NSMutableArray *tArr =  nil;
-//排序 去除最近的5个
-  /*
-    NSArray *results = [existModel
-                        sortedArrayUsingDescriptors:[NSArray arrayWithObject:descriptor]];
-    */
-    LPDTriggerLogModel *firstModel = existModel.firstObject;
+    LPDTriggerLogModel *firstModel = sortResults.firstObject;
     
-    if (firstModel.count < existModel.count) {
-        
+    if (firstModel.count > existModel.count) {
+        return;
     }
     
-    
-    
-    
+    for (NSInteger index = 0; index < existModel.count; index++) {
+        
+        LPDTriggerLogModel *model = [existModel objectAtIndex:index];
+        
+        NSLog(@"%zd---time:%f",index,model.eventTimestamp);
+        
+    }
+
 }
+
 
 @end

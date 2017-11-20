@@ -10,6 +10,7 @@
 #import <JavaScriptCore/JavaScriptCore.h>
 #import "LPDTriggerManager.h"
 #import "son.h"
+#import "LPDTriggerLogModel.h"
 
 @interface ViewController ()
 
@@ -21,27 +22,26 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+ 
+   //  [[LPDTriggerManager defualtCenterManager] addMonitorSEL:@selector(sumWithA:B:C:) forObj:self event:nil];
+   //  [[LPDTriggerManager defualtCenterManager] addMonitorSEL:@selector(test) forCls:[self class] event:nil];
+   //  [NSThread sleepForTimeInterval:2];
     
- //   [son objCls];
-    
-    NSString *name = NSStringFromClass([son class]);
-    NSLog(@"name:%@",name);
-   
-   NSLog(@"viewDidLoad--");
-    
-   //[[LPDTriggerManager defualtCenterManager] addMonitorSEL:@selector(sumWithA:B:C:) forObj:self event:nil];
-    [[LPDTriggerManager defualtCenterManager] addMonitorSEL:@selector(test) forCls:[self class] event:nil];
-  //  [NSThread sleepForTimeInterval:2];
-    
-   
 
-   [ViewController test];
-  //  [self sumWithA:1 B:2 C:3];
 }
 
-+ (void)test{
+- (void)addRealmTestData{
     
-    NSLog(@"bafafafa");
+    
+  for (NSInteger index = 0; index < 20; index++) {
+      
+      LPDTriggerLogModel *model = [LPDTriggerLogModel new];
+      
+      model.logId =  @"abcdef_afab";
+      model.eventTimestamp = [[NSString stringWithFormat:@"15111603%d",(int)(arc4random()%100)] integerValue];
+      model.isUpload = NO;
+        
+  }
     
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		006850931FC2B28600C71CED /* ObjCDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 006850921FC2B28600C71CED /* ObjCDemoTests.m */; };
 		00801D541FB97D60007EAFDD /* LPDTriggerDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 00801D531FB97D60007EAFDD /* LPDTriggerDB.m */; };
 		00A212EB1FBC44BC00236AEA /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A212EA1FBC44BC00236AEA /* Father.m */; };
 		00A212EE1FBC44CF00236AEA /* son.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A212ED1FBC44CF00236AEA /* son.m */; };
@@ -26,6 +27,16 @@
 		880EABECCBFFFF2E64033CB9 /* libPods-ObjCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5AEEAD36B7D1138F7D645BD /* libPods-ObjCDemo.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		006850951FC2B28600C71CED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C0601C1FB4006600AC4E38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00C060231FB4006600AC4E38;
+			remoteInfo = ObjCDemo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		00C0605D1FB4594A00AC4E38 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -39,6 +50,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		006850901FC2B28500C71CED /* ObjCDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjCDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		006850921FC2B28600C71CED /* ObjCDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCDemoTests.m; sourceTree = "<group>"; };
+		006850941FC2B28600C71CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00801D521FB97D60007EAFDD /* LPDTriggerDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerDB.h; sourceTree = "<group>"; };
 		00801D531FB97D60007EAFDD /* LPDTriggerDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerDB.m; sourceTree = "<group>"; };
 		00A212E91FBC44BC00236AEA /* Father.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
@@ -74,6 +88,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0068508D1FC2B28500C71CED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00C060211FB4006600AC4E38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,6 +113,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		006850911FC2B28600C71CED /* ObjCDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				006850921FC2B28600C71CED /* ObjCDemoTests.m */,
+				006850941FC2B28600C71CED /* Info.plist */,
+			);
+			path = ObjCDemoTests;
+			sourceTree = "<group>";
+		};
 		00AB7E471FB4A2D900002A85 /* ConditionTriggerLog */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +153,7 @@
 			children = (
 				00C060261FB4006600AC4E38 /* ObjCDemo */,
 				00C060601FB4594A00AC4E38 /* ConmandLineDemo */,
+				006850911FC2B28600C71CED /* ObjCDemoTests */,
 				00C060251FB4006600AC4E38 /* Products */,
 				51DCAE1C84ED4A7DF04E19F6 /* Pods */,
 				1D727F5CF0F638B86365D93B /* Frameworks */,
@@ -134,6 +165,7 @@
 			children = (
 				00C060241FB4006600AC4E38 /* ObjCDemo.app */,
 				00C0605F1FB4594A00AC4E38 /* ConmandLineDemo */,
+				006850901FC2B28500C71CED /* ObjCDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,6 +221,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0068508F1FC2B28500C71CED /* ObjCDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 006850991FC2B28600C71CED /* Build configuration list for PBXNativeTarget "ObjCDemoTests" */;
+			buildPhases = (
+				0068508C1FC2B28500C71CED /* Sources */,
+				0068508D1FC2B28500C71CED /* Frameworks */,
+				0068508E1FC2B28500C71CED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				006850961FC2B28600C71CED /* PBXTargetDependency */,
+			);
+			name = ObjCDemoTests;
+			productName = ObjCDemoTests;
+			productReference = 006850901FC2B28500C71CED /* ObjCDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		00C060231FB4006600AC4E38 /* ObjCDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00C0603A1FB4006600AC4E38 /* Build configuration list for PBXNativeTarget "ObjCDemo" */;
@@ -235,6 +285,11 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = boycehe;
 				TargetAttributes = {
+					0068508F1FC2B28500C71CED = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 00C060231FB4006600AC4E38;
+					};
 					00C060231FB4006600AC4E38 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
@@ -260,11 +315,19 @@
 			targets = (
 				00C060231FB4006600AC4E38 /* ObjCDemo */,
 				00C0605E1FB4594A00AC4E38 /* ConmandLineDemo */,
+				0068508F1FC2B28500C71CED /* ObjCDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0068508E1FC2B28500C71CED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00C060221FB4006600AC4E38 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,6 +395,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0068508C1FC2B28500C71CED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006850931FC2B28600C71CED /* ObjCDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00C060201FB4006600AC4E38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -361,6 +432,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		006850961FC2B28600C71CED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00C060231FB4006600AC4E38 /* ObjCDemo */;
+			targetProxy = 006850951FC2B28600C71CED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		00C0602D1FB4006600AC4E38 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -381,6 +460,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		006850971FC2B28600C71CED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35326DBFMT;
+				INFOPLIST_FILE = ObjCDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dream.demo.ObjCDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjCDemo.app/ObjCDemo";
+			};
+			name = Debug;
+		};
+		006850981FC2B28600C71CED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35326DBFMT;
+				INFOPLIST_FILE = ObjCDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dream.demo.ObjCDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjCDemo.app/ObjCDemo";
+			};
+			name = Release;
+		};
 		00C060381FB4006600AC4E38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -544,6 +653,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		006850991FC2B28600C71CED /* Build configuration list for PBXNativeTarget "ObjCDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				006850971FC2B28600C71CED /* Debug */,
+				006850981FC2B28600C71CED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		00C0601F1FB4006600AC4E38 /* Build configuration list for PBXProject "ObjCDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -14,6 +14,6 @@
 
 + (instancetype)defaultDB;
 
-
++ (void)testDatas;
 
 @end
