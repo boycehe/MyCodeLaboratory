@@ -13,6 +13,8 @@
 		0068509C1FC2B3D300C71CED /* LPDTriggerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DC96A91FB93CF500EBB741 /* LPDTriggerManager.m */; };
 		0068509D1FC2B3D600C71CED /* LPDTriggerLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E456BB1FBE8EA50098726C /* LPDTriggerLogModel.m */; };
 		0068509E1FC2B3D900C71CED /* LPDTriggerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E456BE1FBEA4D90098726C /* LPDTriggerUtils.m */; };
+		006850A51FC2E57400C71CED /* LPDTriggerUploadEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 006850A41FC2E57400C71CED /* LPDTriggerUploadEngine.m */; };
+		006850A61FC2E57400C71CED /* LPDTriggerUploadEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 006850A41FC2E57400C71CED /* LPDTriggerUploadEngine.m */; };
 		00801D541FB97D60007EAFDD /* LPDTriggerDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 00801D531FB97D60007EAFDD /* LPDTriggerDB.m */; };
 		00A212EB1FBC44BC00236AEA /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A212EA1FBC44BC00236AEA /* Father.m */; };
 		00A212EE1FBC44CF00236AEA /* son.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A212ED1FBC44CF00236AEA /* son.m */; };
@@ -59,6 +61,8 @@
 		006850901FC2B28500C71CED /* ObjCDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjCDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		006850921FC2B28600C71CED /* ObjCDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCDemoTests.m; sourceTree = "<group>"; };
 		006850941FC2B28600C71CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		006850A31FC2E57400C71CED /* LPDTriggerUploadEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerUploadEngine.h; sourceTree = "<group>"; };
+		006850A41FC2E57400C71CED /* LPDTriggerUploadEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerUploadEngine.m; sourceTree = "<group>"; };
 		00801D521FB97D60007EAFDD /* LPDTriggerDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerDB.h; sourceTree = "<group>"; };
 		00801D531FB97D60007EAFDD /* LPDTriggerDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerDB.m; sourceTree = "<group>"; };
 		00A212E91FBC44BC00236AEA /* Father.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 				00E456BB1FBE8EA50098726C /* LPDTriggerLogModel.m */,
 				00E456BD1FBEA4D90098726C /* LPDTriggerUtils.h */,
 				00E456BE1FBEA4D90098726C /* LPDTriggerUtils.m */,
+				006850A31FC2E57400C71CED /* LPDTriggerUploadEngine.h */,
+				006850A41FC2E57400C71CED /* LPDTriggerUploadEngine.m */,
 			);
 			path = ConditionTriggerLog;
 			sourceTree = "<group>";
@@ -470,6 +476,7 @@
 				0068509D1FC2B3D600C71CED /* LPDTriggerLogModel.m in Sources */,
 				0068509C1FC2B3D300C71CED /* LPDTriggerManager.m in Sources */,
 				006850931FC2B28600C71CED /* ObjCDemoTests.m in Sources */,
+				006850A61FC2E57400C71CED /* LPDTriggerUploadEngine.m in Sources */,
 				0068509B1FC2B3D000C71CED /* LPDTriggerDB.m in Sources */,
 				0068509E1FC2B3D900C71CED /* LPDTriggerUtils.m in Sources */,
 			);
@@ -489,6 +496,7 @@
 				00E456BC1FBE8EA50098726C /* LPDTriggerLogModel.m in Sources */,
 				00A212EB1FBC44BC00236AEA /* Father.m in Sources */,
 				00AB7E4E1FB5565400002A85 /* ReactiveObjCDemoViewController.m in Sources */,
+				006850A51FC2E57400C71CED /* LPDTriggerUploadEngine.m in Sources */,
 				00DC96AA1FB93CF500EBB741 /* LPDTriggerManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

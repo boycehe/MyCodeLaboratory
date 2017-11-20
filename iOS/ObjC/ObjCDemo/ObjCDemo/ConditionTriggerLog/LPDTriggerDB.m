@@ -155,10 +155,9 @@
     
     if (topModel.eventTimestamp - bottomCountModel.eventTimestamp <= firstModel.peroidTime) {
         NSLog(@"符合要求，准备上传");
+    }else{
+        NSLog(@"不符合要求，等待下次");
     }
-    
-   
-    
     
 
 }
