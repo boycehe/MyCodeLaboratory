@@ -23,7 +23,7 @@
     
     [super viewDidLoad];
  
-   //  [[LPDTriggerManager defualtCenterManager] addMonitorSEL:@selector(sumWithA:B:C:) forObj:self event:nil];
+     [[LPDTriggerManager defualtCenterManager] addMonitorSEL:@selector(sumWithA:B:C:) forObj:self event:nil];
    //  [[LPDTriggerManager defualtCenterManager] addMonitorSEL:@selector(test) forCls:[self class] event:nil];
    //  [NSThread sleepForTimeInterval:2];
     
@@ -47,6 +47,7 @@
 
 - (BOOL)sumWithA:(NSInteger)a B:(NSInteger)b C:(NSInteger)c{
     
+
     return NO;
     
 }

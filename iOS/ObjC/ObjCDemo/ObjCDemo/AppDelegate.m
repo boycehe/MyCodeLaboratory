@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "LPDTriggerUtils.h"
+#import <AVOSCloud/AVOSCloud.h>
+#import "LPDTriggerDB.h"
+#import "LPDTriggerLogModel.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +22,35 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    NSLog(@"baseinfo:%@",[LPDTriggerUtils baseInfo]);
+    [AVOSCloud setApplicationId:@"fvoLrzIRocXh0lCyTpNrTUUk-gzGzoHsz" clientKey:@"SNyqfyDcG4yaYsH8iXbXR0jV"];
+    //[AVOSCloud set];
+    
+    LPDTriggerDB *db = [LPDTriggerDB defaultDB];
+    
+    for (NSInteger index = 0; index < 20; index++) {
+        
+        LPDTriggerLogModel *model = [LPDTriggerLogModel new];
+        model.logId =  @"abcdef_afab";
+        model.eventTimestamp = 1511160300 + (int)(arc4random()%100);
+        model.isUpload   = NO;
+        model.count      = 5;
+        model.peroidTime = 100;
+        model.extInfo = @"hello world";
+        model.baseInfo = [LPDTriggerUtils baseInfo];
+        
+        
+        RLMRealm *realm = [RLMRealm defaultRealm];
+        [realm transactionWithBlock:^{
+            [realm addObject:model];
+        }];
+        
+    }
+    
+    LPDTriggerLogModel *model = [LPDTriggerLogModel new];
+    model.logId =  @"abcdef_afab";
+    
+    [db checkAndUploadWithModel:model];
+    
     
     return YES;
 }

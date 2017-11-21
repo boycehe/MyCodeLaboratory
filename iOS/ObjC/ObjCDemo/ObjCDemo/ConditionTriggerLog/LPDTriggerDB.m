@@ -10,6 +10,7 @@
 #import "LPDTriggerLogModel.h"
 #import "LPDTriggerUtils.h"
 #import <Realm/Realm.h>
+#import "LPDTriggerUploadEngine.h"
 
 #define LPDGenerateLogId(cls,sel) ([NSString stringWithFormat:@"%@_%@",NSStringFromClass(cls),NSStringFromSelector(sel)])
 
@@ -142,11 +143,21 @@
         return;
     }
     
+    NSMutableArray *dicArr = [NSMutableArray array];
+    
     for (NSInteger index = sortResults.count - 1; index >= sortResults.count - firstModel.count; index--) {
         
-        LPDTriggerLogModel *model1 = [sortResults objectAtIndex:index];
+        LPDTriggerLogModel *m = [sortResults objectAtIndex:index];
         
-        NSLog(@"%zd---time:%f",index,model1.eventTimestamp);
+        NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+        [dic setObject:@(m.count) forKey:@"count"];
+        [dic setObject:m.extInfo forKey:@"customParameter"];
+        [dic setObject:[LPDTriggerUtils netStatusFromBaseInfo:m.baseInfo] forKey:@"networkType"];
+        [dic setObject:@(m.eventTimestamp) forKey:@"occurrenceTime"];
+        [dic setObject:m.logId forKey:@"tag"];
+        [dic setObject:@(m.peroidTime) forKey:@"time"];
+    
+        [dicArr addObject:dic];
     }
     
     LPDTriggerLogModel *topModel = [sortResults objectAtIndex:sortResults.count-1];
@@ -155,6 +166,10 @@
     
     if (topModel.eventTimestamp - bottomCountModel.eventTimestamp <= firstModel.peroidTime) {
         NSLog(@"符合要求，准备上传");
+      
+        [LPDTriggerUploadEngine upload:topModel extInfo:dicArr];
+        
+        
     }else{
         NSLog(@"不符合要求，等待下次");
     }

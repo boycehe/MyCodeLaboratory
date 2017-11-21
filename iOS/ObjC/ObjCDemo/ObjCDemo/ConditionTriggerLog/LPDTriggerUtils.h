@@ -11,5 +11,8 @@
 @interface LPDTriggerUtils : NSObject
 
 + (NSString*)baseInfo;
-
++ (NSString*)osVersionFromBaseInfo:(NSString*)baseInfo;
++ (NSString*)deviceFromBaseInfo:(NSString*)baseInfo;
++ (NSString*)appVersionFromBaseInfo:(NSString*)baseInfo;
++ (NSString*)netStatusFromBaseInfo:(NSString*)baseInfo;
 @end

@@ -1,5 +1,6 @@
 PODS:
   - AVOSCloud (7.3.2)
+  - Reachability (3.2)
   - ReactiveObjC (3.0.0)
   - Realm (3.0.1):
     - Realm/Headers (= 3.0.1)
@@ -7,14 +8,16 @@ PODS:
 
 DEPENDENCIES:
   - AVOSCloud
+  - Reachability (~> 3.2)
   - ReactiveObjC
   - Realm
 
 SPEC CHECKSUMS:
   AVOSCloud: 8a18125408bac1fc73c19ceb897db4ec4e0e6044
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
   Realm: ba6144c74f835f7497791f6599d63a7755377b83
 
-PODFILE CHECKSUM: 500b77cbd6d5d65ec793b135ecc0f4c15e6e3c84
+PODFILE CHECKSUM: 81ef16caa0f0012902020f708cdfd019381f7fe2
 
 COCOAPODS: 1.4.0.beta.2

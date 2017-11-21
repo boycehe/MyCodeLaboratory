@@ -5,6 +5,7 @@ def mainPods
 	pod 'ReactiveObjC'
     pod 'Realm'
     pod 'AVOSCloud'
+    pod 'Reachability', '~> 3.2'
 end
 
 target 'ObjCDemo' do

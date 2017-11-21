@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "LPDTriggerLogModel.h"
 #import "LPDTriggerDB.h"
+#import <AVOSCloud/AVOSCloud.h>
 
 @interface ObjCDemoTests : XCTestCase
 
@@ -28,28 +29,9 @@
 
 - (void)testExample {
    
-     LPDTriggerDB *db = [LPDTriggerDB defaultDB];
+    [AVOSCloud setApplicationId:@"fvoLrzIRocXh0lCyTpNrTUUk-gzGzoHsz" clientKey:@"SNyqfyDcG4yaYsH8iXbXR0jV"];
     
-    for (NSInteger index = 0; index < 20; index++) {
-        
-        LPDTriggerLogModel *model = [LPDTriggerLogModel new];
-        model.logId =  @"abcdef_afab";
-        model.eventTimestamp = 1511160300 + (int)(arc4random()%100);
-        model.isUpload   = NO;
-        model.count      = 5;
-        model.peroidTime = 100;
-        
-        RLMRealm *realm = [RLMRealm defaultRealm];
-        [realm transactionWithBlock:^{
-            [realm addObject:model];
-        }];
-        
-    }
     
-    LPDTriggerLogModel *model = [LPDTriggerLogModel new];
-    model.logId =  @"abcdef_afab";
-
-    [db checkAndUploadWithModel:model];
     
 }
 
