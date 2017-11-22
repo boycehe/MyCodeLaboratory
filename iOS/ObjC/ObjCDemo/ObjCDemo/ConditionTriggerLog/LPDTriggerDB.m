@@ -12,7 +12,7 @@
 #import <Realm/Realm.h>
 #import "LPDTriggerUploadEngine.h"
 
-#define LPDGenerateLogId(cls,sel) ([NSString stringWithFormat:@"%@_%@",NSStringFromClass(cls),NSStringFromSelector(sel)])
+#define LPDGeneratelogTag(cls,sel) ([NSString stringWithFormat:@"%@_%@",NSStringFromClass(cls),NSStringFromSelector(sel)])
 
 @interface LPDTriggerDB()
 
@@ -71,17 +71,17 @@
         return NO;
     }
     
-   NSString *logId = LPDGenerateLogId(cls,seloctor);
+   NSString *logTag = LPDGeneratelogTag(cls,seloctor);
     
    RLMRealm *rm = [RLMRealm defaultRealm];
    
-    RLMResults<LPDTriggerLogModel *> *existModel = [LPDTriggerLogModel objectsWhere:[NSString stringWithFormat:@"logId = '%@'",logId]];
+    RLMResults<LPDTriggerLogModel *> *existModel = [LPDTriggerLogModel objectsWhere:[NSString stringWithFormat:@"logTag = '%@'",logTag]];
     if (existModel.count >0) {
         return YES;
     }
     
    LPDTriggerLogModel *model = [[LPDTriggerLogModel alloc] init];
-   model.logId          = logId;
+   model.logTag          = logTag;
    model.baseInfo       = [LPDTriggerUtils baseInfo];
    model.eventTimestamp = [[NSDate date] timeIntervalSince1970];
    model.eventType      = event.type;
@@ -97,9 +97,9 @@
 
 - (BOOL)writeLog:(NSString*)log forClass:(Class)cls sel:(SEL)seloctor{
     
-    NSString *logId = LPDGenerateLogId(cls,seloctor);
+    NSString *logTag = LPDGeneratelogTag(cls,seloctor);
     
-    RLMResults<LPDTriggerLogModel *> *existModel = [LPDTriggerLogModel objectsWhere:[NSString stringWithFormat:@"logId = '%@'",logId]];
+    RLMResults<LPDTriggerLogModel *> *existModel = [LPDTriggerLogModel objectsWhere:[NSString stringWithFormat:@"logTag = '%@'",logTag]];
     
     if (existModel.count == 0) {
         return NO;
@@ -111,7 +111,7 @@
     RLMRealm *rm = [RLMRealm defaultRealm];
    
     LPDTriggerLogModel *model = [[LPDTriggerLogModel alloc] init];
-    model.logId          = LPDGenerateLogId(cls, seloctor);
+    model.logTag          = LPDGeneratelogTag(cls, seloctor);
     model.baseInfo       = [LPDTriggerUtils baseInfo];
     model.eventTimestamp = [[NSDate date] timeIntervalSince1970];
     model.eventType      = firstExistModel.eventType;
@@ -129,7 +129,7 @@
 
 - (void)checkAndUploadWithModel:(LPDTriggerLogModel*)model{
     
-    RLMResults<LPDTriggerLogModel *> *existModel = [LPDTriggerLogModel objectsWhere:[NSString stringWithFormat:@"logId = '%@' AND  isUpload = NO",model.logId]];
+    RLMResults<LPDTriggerLogModel *> *existModel = [LPDTriggerLogModel objectsWhere:[NSString stringWithFormat:@"logTag = '%@' AND  isUpload = NO",model.logTag]];
     
     if (existModel.count <=0) {
         return;
@@ -154,7 +154,7 @@
         [dic setObject:m.extInfo forKey:@"customParameter"];
         [dic setObject:[LPDTriggerUtils netStatusFromBaseInfo:m.baseInfo] forKey:@"networkType"];
         [dic setObject:@(m.eventTimestamp) forKey:@"occurrenceTime"];
-        [dic setObject:m.logId forKey:@"tag"];
+        [dic setObject:m.logTag forKey:@"tag"];
         [dic setObject:@(m.peroidTime) forKey:@"time"];
     
         [dicArr addObject:dic];

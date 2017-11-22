@@ -30,7 +30,7 @@
     for (NSInteger index = 0; index < 20; index++) {
         
         LPDTriggerLogModel *model = [LPDTriggerLogModel new];
-        model.logId =  @"abcdef_afab";
+        model.logTag =  @"abcdef_afab";
         model.eventTimestamp = 1511160300 + (int)(arc4random()%100);
         model.isUpload   = NO;
         model.count      = 5;
@@ -47,7 +47,7 @@
     }
     
     LPDTriggerLogModel *model = [LPDTriggerLogModel new];
-    model.logId =  @"abcdef_afab";
+    model.logTag =  @"abcdef_afab";
     
     [db checkAndUploadWithModel:model];
     

@@ -11,7 +11,7 @@
 #import "LPDTriggerEvent.h"
 
 @interface LPDTriggerLogModel : RLMObject
-@property  NSString         *logId;
+@property  NSString         *logTag;
 /**
  *骑手的账号，手机型号，网络环境 ，app版本，系统版本
  */

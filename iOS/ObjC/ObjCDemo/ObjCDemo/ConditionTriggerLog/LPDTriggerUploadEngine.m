@@ -15,8 +15,8 @@
     
      AVObject *uploadObj = [AVObject objectWithClassName:@"TimeBomb"];
     
-    NSData *extJsonData = [NSJSONSerialization dataWithJSONObject:extInfo options:NSJSONWritingPrettyPrinted error:nil];
-    NSString *extStr    = [NSString stringWithUTF8String:[extJsonData bytes]];
+     NSData *extJsonData = [NSJSONSerialization dataWithJSONObject:extInfo options:NSJSONWritingPrettyPrinted error:nil];
+     NSString *extStr    = [NSString stringWithUTF8String:[extJsonData bytes]];
     
      [uploadObj setObject:[LPDTriggerUtils appVersionFromBaseInfo:model.baseInfo] forKey:@"appVersion"];
      [uploadObj setObject:@(model.count) forKey:@"count"];
@@ -24,7 +24,7 @@
      [uploadObj setObject:@(model.eventTimestamp) forKey:@"occurrenceTime"];
      [uploadObj setObject:[LPDTriggerUtils osVersionFromBaseInfo:model.baseInfo] forKey:@"osVersion"];
      [uploadObj setObject:[LPDTriggerUtils deviceFromBaseInfo:model.baseInfo] forKey:@"phoneModel"];
-     [uploadObj setObject:model.logId forKey:@"tag"];
+     [uploadObj setObject:model.logTag forKey:@"tag"];
      [uploadObj setObject:@(model.peroidTime) forKey:@"time"];
     
     [uploadObj saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {

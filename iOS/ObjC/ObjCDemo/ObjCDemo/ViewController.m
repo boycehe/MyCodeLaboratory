@@ -37,7 +37,7 @@
       
       LPDTriggerLogModel *model = [LPDTriggerLogModel new];
       
-      model.logId =  @"abcdef_afab";
+      model.logTag =  @"abcdef_afab";
       model.eventTimestamp = [[NSString stringWithFormat:@"15111603%d",(int)(arc4random()%100)] integerValue];
       model.isUpload = NO;
         

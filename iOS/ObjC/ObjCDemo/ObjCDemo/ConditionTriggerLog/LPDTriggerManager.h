@@ -28,4 +28,6 @@
 
 - (void)eventWithValue:(LPDTriggerEventValue)value forCls:(Class)cls Sel:(SEL)selctor;
 
+- (void)eventWithEvent:(LPDTriggerEvent*)event andTag:(NSString*)tag;
+
 @end
