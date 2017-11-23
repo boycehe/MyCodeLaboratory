@@ -15,8 +15,6 @@
 
 + (instancetype)defaultDB;
 
-+ (void)testDatas;
-
 - (void)checkAndUploadWithModel:(LPDTriggerLogModel*)model;
 
 @end

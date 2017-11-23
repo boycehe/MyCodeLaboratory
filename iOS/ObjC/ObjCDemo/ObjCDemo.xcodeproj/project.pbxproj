@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0049E6351FC694000006B75D /* LPDBaseProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0049E6341FC694000006B75D /* LPDBaseProvider.m */; };
 		006850931FC2B28600C71CED /* ObjCDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 006850921FC2B28600C71CED /* ObjCDemoTests.m */; };
 		0068509A1FC2B3CC00C71CED /* LPDTriggerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AB7E491FB4A4D900002A85 /* LPDTriggerEvent.m */; };
 		0068509B1FC2B3D000C71CED /* LPDTriggerDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 00801D531FB97D60007EAFDD /* LPDTriggerDB.m */; };
@@ -58,6 +59,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0049E6331FC694000006B75D /* LPDBaseProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDBaseProvider.h; sourceTree = "<group>"; };
+		0049E6341FC694000006B75D /* LPDBaseProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDBaseProvider.m; sourceTree = "<group>"; };
 		006850901FC2B28500C71CED /* ObjCDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjCDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		006850921FC2B28600C71CED /* ObjCDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCDemoTests.m; sourceTree = "<group>"; };
 		006850941FC2B28600C71CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,6 +130,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0049E6321FC693980006B75D /* LPDNetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				0049E6331FC694000006B75D /* LPDBaseProvider.h */,
+				0049E6341FC694000006B75D /* LPDBaseProvider.m */,
+			);
+			path = LPDNetWorking;
+			sourceTree = "<group>";
+		};
 		006850911FC2B28600C71CED /* ObjCDemoTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +201,7 @@
 		00C060261FB4006600AC4E38 /* ObjCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0049E6321FC693980006B75D /* LPDNetWorking */,
 				00AB7E4B1FB5563B00002A85 /* Demo */,
 				00AB7E471FB4A2D900002A85 /* ConditionTriggerLog */,
 				00C060271FB4006600AC4E38 /* AppDelegate.h */,
@@ -486,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0049E6351FC694000006B75D /* LPDBaseProvider.m in Sources */,
 				00A212EE1FBC44CF00236AEA /* son.m in Sources */,
 				00C0602C1FB4006600AC4E38 /* ViewController.m in Sources */,
 				00E456BF1FBEA4D90098726C /* LPDTriggerUtils.m in Sources */,
