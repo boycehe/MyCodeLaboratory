@@ -61,6 +61,7 @@
 /* Begin PBXFileReference section */
 		0049E6331FC694000006B75D /* LPDBaseProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDBaseProvider.h; sourceTree = "<group>"; };
 		0049E6341FC694000006B75D /* LPDBaseProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDBaseProvider.m; sourceTree = "<group>"; };
+		0049E6361FC6B6820006B75D /* LPDTriggerActionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerActionProtocol.h; sourceTree = "<group>"; };
 		006850901FC2B28500C71CED /* ObjCDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjCDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		006850921FC2B28600C71CED /* ObjCDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCDemoTests.m; sourceTree = "<group>"; };
 		006850941FC2B28600C71CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -163,6 +164,7 @@
 				00E456BE1FBEA4D90098726C /* LPDTriggerUtils.m */,
 				006850A31FC2E57400C71CED /* LPDTriggerUploadEngine.h */,
 				006850A41FC2E57400C71CED /* LPDTriggerUploadEngine.m */,
+				0049E6361FC6B6820006B75D /* LPDTriggerActionProtocol.h */,
 			);
 			path = ConditionTriggerLog;
 			sourceTree = "<group>";

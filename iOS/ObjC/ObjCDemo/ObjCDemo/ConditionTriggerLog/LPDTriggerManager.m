@@ -206,4 +206,9 @@ void eventInstanceStatisticAnalyse(id self,SEL _cmd ,va_list argp){
     
 }
 
+- (void)eventWithEvent:(LPDTriggerEvent*)event andTag:(NSString*)tag action:(NSObject<LPDTriggerActionProtocol>*)action{
+    
+    
+}
+
 @end

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "LPDTriggerEvent.h"
+#import "LPDTriggerActionProtocol.h"
 
 #define LPDTriggerSendSuccessEvent  [[LPDTriggerManager defualtCenterManager] \
                                 eventWithValue:LPDTriggerEventValueSuccess \
@@ -29,5 +30,7 @@
 - (void)eventWithValue:(LPDTriggerEventValue)value forCls:(Class)cls Sel:(SEL)selctor;
 
 - (void)eventWithEvent:(LPDTriggerEvent*)event andTag:(NSString*)tag;
+
+- (void)eventWithEvent:(LPDTriggerEvent*)event andTag:(NSString*)tag action:(NSObject<LPDTriggerActionProtocol>*)action;
 
 @end
