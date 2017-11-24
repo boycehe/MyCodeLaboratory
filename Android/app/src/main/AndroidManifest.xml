@@ -377,7 +377,14 @@
             android:exported="true" />
 
         <activity android:name=".Chapter9.DictResolverActivity" />
-        <activity android:name=".Chapter9.ContactContentProviderActivity"></activity>
+        <activity android:name=".Chapter9.ContactContentProviderActivity" />
+
+        <service
+            android:name=".Chapter10.FirstService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Chapter10.Chapter10Activity"></activity>
     </application>
 
 </manifest>

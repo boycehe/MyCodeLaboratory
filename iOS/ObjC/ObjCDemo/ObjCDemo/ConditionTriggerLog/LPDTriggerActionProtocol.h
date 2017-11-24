@@ -10,4 +10,7 @@
 
 @protocol LPDTriggerActionProtocol <NSObject>
 
+- (BOOL)dataWillUpload;
+- (void)dataDidUpload;
+
 @end
