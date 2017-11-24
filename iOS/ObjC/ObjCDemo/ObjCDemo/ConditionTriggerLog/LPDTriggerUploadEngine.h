@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "LPDTriggerLogModel.h"
+#import "LPDTriggerUploadModel.h"
 
 @interface LPDTriggerUploadEngine : NSObject
 + (void)upload:(LPDTriggerLogModel*)model extInfo:(NSArray*)extInfo;

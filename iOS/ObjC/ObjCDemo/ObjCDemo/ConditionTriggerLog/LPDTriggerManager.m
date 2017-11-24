@@ -39,6 +39,7 @@
 #import "LPDTriggerLogModel.h"
 #import "LPDTriggerUtils.h"
 #import "LPDTriggerDB.h"
+#import "LPDTriggerUploadModel.h"
 
 #define LPDTriggerSuccessSuffix   @"success"
 #define LPDTriggerFailSuffix      @"fail"
@@ -222,7 +223,23 @@ void eventInstanceStatisticAnalyse(id self,SEL _cmd ,va_list argp){
     model.isIgnore            = NO;
     
     LPDTriggerDB *db = [LPDTriggerDB defaultDB];
-    [db checkAndUploadWithModel:model];
+    LPDTriggerUploadModel *uploadModel =  [db checkAndUploadWithModel:model];
+    
+    if (!uploadModel) {
+        return;
+    }
+    /*
+    if (![action respondsToSelector:@selector(dataWillUpload)] || ![action dataWillUpload]) {
+        return;
+    }
+     */
+    
+    [uploadModel uploadWithBlock:^(BOOL succeeded, NSError *error) {
+        
+    }];
+    
+    
+    
     
     
     

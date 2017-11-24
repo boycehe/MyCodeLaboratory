@@ -127,12 +127,12 @@
     return YES;
 }
 
-- (void)checkAndUploadWithModel:(LPDTriggerLogModel*)model{
+- (LPDTriggerUploadModel*)checkAndUploadWithModel:(LPDTriggerLogModel*)model{
     
     RLMResults<LPDTriggerLogModel *> *existModel = [LPDTriggerLogModel objectsWhere:[NSString stringWithFormat:@"logTag = '%@' AND  isUpload = NO",model.logTag]];
     
     if (existModel.count <=0) {
-        return;
+        return nil;
     }
     
     RLMResults<LPDTriggerLogModel *> *sortResults = [existModel sortedResultsUsingKeyPath:@"eventTimestamp" ascending:YES];
@@ -140,7 +140,7 @@
     LPDTriggerLogModel *firstModel = sortResults.firstObject;
     
     if (firstModel.count > existModel.count) {
-        return;
+        return nil;
     }
     
     NSMutableArray *dicArr = [NSMutableArray array];
@@ -166,13 +166,16 @@
     
     if (topModel.eventTimestamp - bottomCountModel.eventTimestamp <= firstModel.peroidTime) {
         NSLog(@"符合要求，准备上传");
-      
-        [LPDTriggerUploadEngine upload:topModel extInfo:dicArr];
+        LPDTriggerUploadModel *uploadModel = [LPDTriggerUploadModel new];
+        uploadModel.model   = topModel;
+        uploadModel.extInfo = dicArr;
+        return uploadModel;
+        //[LPDTriggerUploadEngine upload:topModel extInfo:dicArr];
         
         
-    }else{
-        NSLog(@"不符合要求，等待下次");
     }
+    
+    return nil;
     
 
 }

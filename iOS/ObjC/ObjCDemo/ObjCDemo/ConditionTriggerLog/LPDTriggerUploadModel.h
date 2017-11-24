@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LPDTriggerLogModel.h"
+typedef void (^LPDUploadResultBlock)(BOOL succeeded,  NSError * error);
 
-@interface LPDTriggerUploadModel : NSMutableDictionary
+@interface LPDTriggerUploadModel : NSObject
+@property (nonatomic,strong) LPDTriggerLogModel         *model;
+@property (nonatomic,strong) NSArray                    *extInfo;
 
+- (void)uploadWithBlock:(LPDUploadResultBlock)block;
 @end

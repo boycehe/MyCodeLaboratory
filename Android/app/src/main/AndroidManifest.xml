@@ -384,7 +384,12 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".Chapter10.Chapter10Activity"></activity>
+        <activity android:name=".Chapter10.Chapter10Activity" />
+
+        <service
+            android:name=".Chapter10.BindService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
