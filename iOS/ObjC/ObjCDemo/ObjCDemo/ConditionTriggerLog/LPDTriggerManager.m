@@ -36,6 +36,9 @@
 
 #import "LPDTriggerManager.h"
 #import <objc/message.h>
+#import "LPDTriggerLogModel.h"
+#import "LPDTriggerUtils.h"
+#import "LPDTriggerDB.h"
 
 #define LPDTriggerSuccessSuffix   @"success"
 #define LPDTriggerFailSuffix      @"fail"
@@ -200,13 +203,27 @@ void eventInstanceStatisticAnalyse(id self,SEL _cmd ,va_list argp){
     Class    nCls = objc_allocateClassPair([orginCls class], name, 0);
     objc_registerClassPair(nCls);
     
-    
-   
+
     return  nCls;
     
 }
 
 - (void)eventWithEvent:(LPDTriggerEvent*)event andTag:(NSString*)tag action:(NSObject<LPDTriggerActionProtocol>*)action{
+    
+    LPDTriggerLogModel *model = [LPDTriggerLogModel new];
+    model.logTag              = tag;
+    model.baseInfo            = [LPDTriggerUtils baseInfo];
+    model.eventTimestamp      = [[NSDate date] timeIntervalSince1970];
+    model.eventType           = event.type;
+    model.isUpload            = NO;
+    model.extInfo             = @"";
+    model.count               = event.count;
+    model.peroidTime          = event.interval;
+    model.isIgnore            = NO;
+    
+    LPDTriggerDB *db = [LPDTriggerDB defaultDB];
+    [db checkAndUploadWithModel:model];
+    
     
     
 }
