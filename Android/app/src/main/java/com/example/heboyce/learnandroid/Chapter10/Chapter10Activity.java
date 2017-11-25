@@ -88,4 +88,19 @@ public class Chapter10Activity extends AppCompatActivity {
 
 
     }
+
+
+    public void startService(View source){
+
+        Intent intent = new Intent(this,MyService.class);
+        startService(intent);
+
+    }
+
+    public void startIntentService(View source){
+        Intent intent = new Intent(this,MyIntentService.class);
+        startService(intent);
+    }
+
+
 }

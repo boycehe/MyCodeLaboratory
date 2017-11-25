@@ -36,4 +36,18 @@
         android:text="getbindService"
         />
 
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="startService"
+        android:onClick="startService"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="startIntentService"
+        android:onClick="startIntentService"
+        />
+
 </LinearLayout>
