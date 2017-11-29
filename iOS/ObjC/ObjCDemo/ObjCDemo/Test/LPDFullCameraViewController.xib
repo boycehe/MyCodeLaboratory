@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PingFang.ttc">
+            <string>PingFangSC-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LPDFullCameraViewController">
+            <connections>
+                <outlet property="closeBtn" destination="Q40-vE-FUS" id="Mmp-Bz-4LD"/>
+                <outlet property="helpBtn" destination="qDf-X8-qk0" id="XMM-2K-Xls"/>
+                <outlet property="reTakePhotoBtn" destination="Mq0-dt-q8T" id="H64-al-74q"/>
+                <outlet property="takePhotoBtn" destination="s2k-1v-duT" id="mii-wD-i9x"/>
+                <outlet property="tipLabel" destination="1Xh-tS-58S" id="xwi-81-2Im"/>
+                <outlet property="uploadBtn" destination="YDI-n7-X6i" id="M8y-ny-ZUN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q40-vE-FUS">
+                    <rect key="frame" x="20" y="20" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="2Z7-oU-c4e"/>
+                        <constraint firstAttribute="width" constant="28" id="rHz-pX-rIW"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="icon_ticket_close_white"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDf-X8-qk0">
+                    <rect key="frame" x="327" y="20" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="28" id="M6u-PF-NyN"/>
+                        <constraint firstAttribute="height" constant="28" id="X9s-Ye-qgs"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="icon_ticket_help_white"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Xh-tS-58S">
+                    <rect key="frame" x="0.0" y="474" width="375" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="5nc-Uv-Boc"/>
+                    </constraints>
+                    <string key="text">轻触拍摄小票
+轻触拍摄小票若无小票，可拍摄商品图片</string>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mq0-dt-q8T">
+                    <rect key="frame" x="48" y="554" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="LNF-9Z-03R"/>
+                        <constraint firstAttribute="height" constant="75" id="drO-AJ-raQ"/>
+                    </constraints>
+                    <state key="normal" title="重拍"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDI-n7-X6i">
+                    <rect key="frame" x="252" y="554" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="Qll-hw-K30"/>
+                        <constraint firstAttribute="width" constant="75" id="X6a-ug-82P"/>
+                    </constraints>
+                    <state key="normal" title="上传"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2k-1v-duT">
+                    <rect key="frame" x="150" y="554" width="75" height="75"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="4yj-3y-MWj"/>
+                        <constraint firstAttribute="width" constant="75" id="Bwg-Tj-8lB"/>
+                    </constraints>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qDf-X8-qk0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="EuZ-sG-6t1"/>
+                <constraint firstItem="Mq0-dt-q8T" firstAttribute="top" secondItem="1Xh-tS-58S" secondAttribute="bottom" constant="34" id="KIj-sj-MVi"/>
+                <constraint firstItem="Q40-vE-FUS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="LNC-k8-odw"/>
+                <constraint firstAttribute="bottom" secondItem="Mq0-dt-q8T" secondAttribute="bottom" constant="38" id="cTE-Ye-M7t"/>
+                <constraint firstItem="Mq0-dt-q8T" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="48" id="caL-yI-M77"/>
+                <constraint firstAttribute="bottom" secondItem="s2k-1v-duT" secondAttribute="bottom" constant="38" id="dhC-4X-VVa"/>
+                <constraint firstItem="Q40-vE-FUS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="eus-32-mtm"/>
+                <constraint firstAttribute="trailing" secondItem="qDf-X8-qk0" secondAttribute="trailing" constant="20" id="gCG-34-Rgk"/>
+                <constraint firstItem="1Xh-tS-58S" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jSw-WX-9O8"/>
+                <constraint firstAttribute="bottom" secondItem="YDI-n7-X6i" secondAttribute="bottom" constant="38" id="pVu-aY-UTs"/>
+                <constraint firstAttribute="trailing" secondItem="1Xh-tS-58S" secondAttribute="trailing" id="udc-tz-hhc"/>
+                <constraint firstAttribute="trailing" secondItem="YDI-n7-X6i" secondAttribute="trailing" constant="48" id="vth-Xz-LnM"/>
+                <constraint firstItem="s2k-1v-duT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xcG-39-UH2"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_ticket_close_white" width="28" height="28"/>
+        <image name="icon_ticket_help_white" width="28" height="28"/>
+    </resources>
+</document>

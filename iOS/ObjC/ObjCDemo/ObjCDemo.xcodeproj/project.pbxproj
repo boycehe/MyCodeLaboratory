@@ -18,6 +18,8 @@
 		006850A51FC2E57400C71CED /* LPDTriggerUploadEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 006850A41FC2E57400C71CED /* LPDTriggerUploadEngine.m */; };
 		006850A61FC2E57400C71CED /* LPDTriggerUploadEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 006850A41FC2E57400C71CED /* LPDTriggerUploadEngine.m */; };
 		00801D541FB97D60007EAFDD /* LPDTriggerDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 00801D531FB97D60007EAFDD /* LPDTriggerDB.m */; };
+		009319611FCBCC90009BC94E /* LPDFullCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0093195E1FCBCC90009BC94E /* LPDFullCameraViewController.xib */; };
+		009319621FCBCC90009BC94E /* LPDFullCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009319601FCBCC90009BC94E /* LPDFullCameraViewController.m */; };
 		00A212EB1FBC44BC00236AEA /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A212EA1FBC44BC00236AEA /* Father.m */; };
 		00A212EE1FBC44CF00236AEA /* son.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A212ED1FBC44CF00236AEA /* son.m */; };
 		00AB7E4A1FB4A4D900002A85 /* LPDTriggerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AB7E491FB4A4D900002A85 /* LPDTriggerEvent.m */; };
@@ -30,6 +32,7 @@
 		00C060371FB4006600AC4E38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C060361FB4006600AC4E38 /* main.m */; };
 		00C060621FB4594A00AC4E38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C060611FB4594A00AC4E38 /* main.m */; };
 		00C060671FB45BD300AC4E38 /* NSInvocationDemo.c in Sources */ = {isa = PBXBuildFile; fileRef = 00C060661FB45BD300AC4E38 /* NSInvocationDemo.c */; };
+		00C6F3BD1FCE671600054DF7 /* TestProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C6F3BC1FCE671600054DF7 /* TestProgressView.m */; };
 		00DC96AA1FB93CF500EBB741 /* LPDTriggerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DC96A91FB93CF500EBB741 /* LPDTriggerManager.m */; };
 		00E456BC1FBE8EA50098726C /* LPDTriggerLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E456BB1FBE8EA50098726C /* LPDTriggerLogModel.m */; };
 		00E456BF1FBEA4D90098726C /* LPDTriggerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E456BE1FBEA4D90098726C /* LPDTriggerUtils.m */; };
@@ -72,6 +75,9 @@
 		006850A41FC2E57400C71CED /* LPDTriggerUploadEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerUploadEngine.m; sourceTree = "<group>"; };
 		00801D521FB97D60007EAFDD /* LPDTriggerDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerDB.h; sourceTree = "<group>"; };
 		00801D531FB97D60007EAFDD /* LPDTriggerDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerDB.m; sourceTree = "<group>"; };
+		0093195E1FCBCC90009BC94E /* LPDFullCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LPDFullCameraViewController.xib; sourceTree = "<group>"; };
+		0093195F1FCBCC90009BC94E /* LPDFullCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPDFullCameraViewController.h; sourceTree = "<group>"; };
+		009319601FCBCC90009BC94E /* LPDFullCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPDFullCameraViewController.m; sourceTree = "<group>"; };
 		00A212E91FBC44BC00236AEA /* Father.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
 		00A212EA1FBC44BC00236AEA /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
 		00A212EC1FBC44CF00236AEA /* son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = son.h; sourceTree = "<group>"; };
@@ -93,6 +99,8 @@
 		00C0605F1FB4594A00AC4E38 /* ConmandLineDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ConmandLineDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C060611FB4594A00AC4E38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00C060661FB45BD300AC4E38 /* NSInvocationDemo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = NSInvocationDemo.c; sourceTree = "<group>"; };
+		00C6F3BB1FCE671600054DF7 /* TestProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestProgressView.h; sourceTree = "<group>"; };
+		00C6F3BC1FCE671600054DF7 /* TestProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestProgressView.m; sourceTree = "<group>"; };
 		00DC96A81FB93CF500EBB741 /* LPDTriggerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerManager.h; sourceTree = "<group>"; };
 		00DC96A91FB93CF500EBB741 /* LPDTriggerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerManager.m; sourceTree = "<group>"; };
 		00E456BA1FBE8EA50098726C /* LPDTriggerLogModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerLogModel.h; sourceTree = "<group>"; };
@@ -152,6 +160,16 @@
 			path = ObjCDemoTests;
 			sourceTree = "<group>";
 		};
+		0093195D1FCBCC7C009BC94E /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				0093195F1FCBCC90009BC94E /* LPDFullCameraViewController.h */,
+				009319601FCBCC90009BC94E /* LPDFullCameraViewController.m */,
+				0093195E1FCBCC90009BC94E /* LPDFullCameraViewController.xib */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		00AB7E471FB4A2D900002A85 /* ConditionTriggerLog */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +197,8 @@
 			children = (
 				00AB7E4C1FB5565400002A85 /* ReactiveObjCDemoViewController.h */,
 				00AB7E4D1FB5565400002A85 /* ReactiveObjCDemoViewController.m */,
+				00C6F3BB1FCE671600054DF7 /* TestProgressView.h */,
+				00C6F3BC1FCE671600054DF7 /* TestProgressView.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -208,6 +228,7 @@
 		00C060261FB4006600AC4E38 /* ObjCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0093195D1FCBCC7C009BC94E /* Test */,
 				0049E6321FC693980006B75D /* LPDNetWorking */,
 				00AB7E4B1FB5563B00002A85 /* Demo */,
 				00AB7E471FB4A2D900002A85 /* ConditionTriggerLog */,
@@ -334,7 +355,7 @@
 					};
 					00C060231FB4006600AC4E38 = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					00C0605E1FB4594A00AC4E38 = {
 						CreatedOnToolsVersion = 9.1;
@@ -377,6 +398,7 @@
 				00C060341FB4006600AC4E38 /* LaunchScreen.storyboard in Resources */,
 				00C060311FB4006600AC4E38 /* Assets.xcassets in Resources */,
 				00C0602F1FB4006600AC4E38 /* Main.storyboard in Resources */,
+				009319611FCBCC90009BC94E /* LPDFullCameraViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +541,8 @@
 				0049E6391FC7D11D0006B75D /* LPDTriggerUploadModel.m in Sources */,
 				00AB7E4E1FB5565400002A85 /* ReactiveObjCDemoViewController.m in Sources */,
 				006850A51FC2E57400C71CED /* LPDTriggerUploadEngine.m in Sources */,
+				00C6F3BD1FCE671600054DF7 /* TestProgressView.m in Sources */,
+				009319621FCBCC90009BC94E /* LPDFullCameraViewController.m in Sources */,
 				00DC96AA1FB93CF500EBB741 /* LPDTriggerManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -705,13 +729,15 @@
 			baseConfigurationReference = B76248144888C07A069B2CB1 /* Pods-ObjCDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 35326DBFMT;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = ObjCDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dream.demo.ObjCDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dream.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "67646a4e-0c55-48bd-a6e9-9bd7452cc0c7";
+				PROVISIONING_PROFILE_SPECIFIER = Dev_Demo;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -721,13 +747,14 @@
 			baseConfigurationReference = FC30A8784635B2F0CA3D13D3 /* Pods-ObjCDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 35326DBFMT;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = ObjCDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dream.demo.ObjCDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dream.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

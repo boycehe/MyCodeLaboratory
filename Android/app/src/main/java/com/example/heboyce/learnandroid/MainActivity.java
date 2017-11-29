@@ -11,6 +11,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.heboyce.learnandroid.Chapter10.Chapter10Activity;
+import com.example.heboyce.learnandroid.Chapter10.Chapter10BroadcastActivity;
+import com.example.heboyce.learnandroid.Chapter10.Chapter10PlayMusicActivity;
 import com.example.heboyce.learnandroid.Chapter10.Chapter10TeleActivity;
 import com.example.heboyce.learnandroid.Chapter8.Chapter81Activity;
 import com.example.heboyce.learnandroid.Chapter8.Chapter82Activity;
@@ -106,7 +108,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             break;
             case 7:
             {
-                itent.setClass(MainActivity.this,Chapter10TeleActivity.class);
+                itent.setClass(MainActivity.this,Chapter10PlayMusicActivity.class);
                 //393
             }
                 break;

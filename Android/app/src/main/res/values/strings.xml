@@ -111,5 +111,8 @@
     <string name="title_activity_bitmap_test">BitmapTest</string>
     <string name="title_activity_day6_list_acitvity">Day6ListAcitvity</string>
     <string name="title_activity_draw_picture">DrawPicture</string>
+    <string name="title_activity_chapter10_play_music">Chapter10PlayMusicActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 
 </resources>

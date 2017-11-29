@@ -11,6 +11,9 @@
 #import <AVOSCloud/AVOSCloud.h>
 #import "LPDTriggerDB.h"
 #import "LPDTriggerLogModel.h"
+#import "LPDFullCameraViewController.h"
+#import "TestProgressView.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,6 +24,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    
+    
     
     [AVOSCloud setApplicationId:@"fvoLrzIRocXh0lCyTpNrTUUk-gzGzoHsz" clientKey:@"SNyqfyDcG4yaYsH8iXbXR0jV"];
     //[AVOSCloud set];
@@ -50,11 +57,28 @@
     model.logTag =  @"abcdef_afab";
     
     [db checkAndUploadWithModel:model];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+  
+    ViewController *v = [[ViewController alloc] init];
+    self.window.rootViewController = v;
+    
+    [self.window makeKeyAndVisible];
     
     
+    
+    
+    NSMutableArray *arr =nil;
+    
+    [self test:&arr];
     return YES;
 }
 
+
+- (void)test:(NSMutableArray**)arr{
+    
+    
+    
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

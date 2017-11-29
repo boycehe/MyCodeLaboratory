@@ -11,6 +11,7 @@
 #import "LPDTriggerManager.h"
 #import "son.h"
 #import "LPDTriggerLogModel.h"
+#import "TestProgressView.h"
 
 @interface ViewController ()
 
@@ -23,7 +24,14 @@
     
     [super viewDidLoad];
  
+    TestProgressView *view = [[TestProgressView alloc]initWithFrame:CGRectMake(50, 100, 200, 50)];
+    view.backgroundColor = [UIColor yellowColor];
     
+    [self.view addSubview:view];
+    
+    [NSTimer scheduledTimerWithTimeInterval:0.5 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        view.progress = view.progress+0.01;
+    }];
     
    //  [[LPDTriggerManager defualtCenterManager] addMonitorSEL:@selector(sumWithA:B:C:) forObj:self event:nil];
    //  [[LPDTriggerManager defualtCenterManager] addMonitorSEL:@selector(test) forCls:[self class] event:nil];
