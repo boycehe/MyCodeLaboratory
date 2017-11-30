@@ -29,7 +29,7 @@
     
     
     
-    [AVOSCloud setApplicationId:@"fvoLrzIRocXh0lCyTpNrTUUk-gzGzoHsz" clientKey:@"SNyqfyDcG4yaYsH8iXbXR0jV"];
+   
     //[AVOSCloud set];
     
     LPDTriggerDB *db = [LPDTriggerDB defaultDB];

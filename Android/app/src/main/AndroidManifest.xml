@@ -432,8 +432,9 @@
             <intent-filter android:priority="0">
                 <action android:name="org.crazyit.action.CTL_ACTION" />
             </intent-filter>
-
         </service>
+
+        <activity android:name=".Chapter11.Chapter11MediaActivity"></activity>
     </application>
 
 </manifest>
