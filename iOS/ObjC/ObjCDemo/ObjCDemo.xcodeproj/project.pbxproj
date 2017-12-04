@@ -34,6 +34,8 @@
 		00C060671FB45BD300AC4E38 /* NSInvocationDemo.c in Sources */ = {isa = PBXBuildFile; fileRef = 00C060661FB45BD300AC4E38 /* NSInvocationDemo.c */; };
 		00C6F3BD1FCE671600054DF7 /* TestProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C6F3BC1FCE671600054DF7 /* TestProgressView.m */; };
 		00DC96AA1FB93CF500EBB741 /* LPDTriggerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DC96A91FB93CF500EBB741 /* LPDTriggerManager.m */; };
+		00DEC7A11FD5347A00B3676F /* AppDelegate+MSTest001.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DEC7A01FD5347A00B3676F /* AppDelegate+MSTest001.m */; };
+		00DEC7A41FD5349000B3676F /* AppDelegate+MSTest002.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DEC7A31FD5349000B3676F /* AppDelegate+MSTest002.m */; };
 		00E456BC1FBE8EA50098726C /* LPDTriggerLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E456BB1FBE8EA50098726C /* LPDTriggerLogModel.m */; };
 		00E456BF1FBEA4D90098726C /* LPDTriggerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E456BE1FBEA4D90098726C /* LPDTriggerUtils.m */; };
 		880EABECCBFFFF2E64033CB9 /* libPods-ObjCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5AEEAD36B7D1138F7D645BD /* libPods-ObjCDemo.a */; };
@@ -103,6 +105,10 @@
 		00C6F3BC1FCE671600054DF7 /* TestProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestProgressView.m; sourceTree = "<group>"; };
 		00DC96A81FB93CF500EBB741 /* LPDTriggerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerManager.h; sourceTree = "<group>"; };
 		00DC96A91FB93CF500EBB741 /* LPDTriggerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerManager.m; sourceTree = "<group>"; };
+		00DEC79F1FD5347A00B3676F /* AppDelegate+MSTest001.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+MSTest001.h"; sourceTree = "<group>"; };
+		00DEC7A01FD5347A00B3676F /* AppDelegate+MSTest001.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+MSTest001.m"; sourceTree = "<group>"; };
+		00DEC7A21FD5349000B3676F /* AppDelegate+MSTest002.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+MSTest002.h"; sourceTree = "<group>"; };
+		00DEC7A31FD5349000B3676F /* AppDelegate+MSTest002.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+MSTest002.m"; sourceTree = "<group>"; };
 		00E456BA1FBE8EA50098726C /* LPDTriggerLogModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerLogModel.h; sourceTree = "<group>"; };
 		00E456BB1FBE8EA50098726C /* LPDTriggerLogModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerLogModel.m; sourceTree = "<group>"; };
 		00E456BD1FBEA4D90098726C /* LPDTriggerUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerUtils.h; sourceTree = "<group>"; };
@@ -166,6 +172,10 @@
 				0093195F1FCBCC90009BC94E /* LPDFullCameraViewController.h */,
 				009319601FCBCC90009BC94E /* LPDFullCameraViewController.m */,
 				0093195E1FCBCC90009BC94E /* LPDFullCameraViewController.xib */,
+				00DEC79F1FD5347A00B3676F /* AppDelegate+MSTest001.h */,
+				00DEC7A01FD5347A00B3676F /* AppDelegate+MSTest001.m */,
+				00DEC7A21FD5349000B3676F /* AppDelegate+MSTest002.h */,
+				00DEC7A31FD5349000B3676F /* AppDelegate+MSTest002.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -538,6 +548,8 @@
 				00801D541FB97D60007EAFDD /* LPDTriggerDB.m in Sources */,
 				00E456BC1FBE8EA50098726C /* LPDTriggerLogModel.m in Sources */,
 				00A212EB1FBC44BC00236AEA /* Father.m in Sources */,
+				00DEC7A11FD5347A00B3676F /* AppDelegate+MSTest001.m in Sources */,
+				00DEC7A41FD5349000B3676F /* AppDelegate+MSTest002.m in Sources */,
 				0049E6391FC7D11D0006B75D /* LPDTriggerUploadModel.m in Sources */,
 				00AB7E4E1FB5565400002A85 /* ReactiveObjCDemoViewController.m in Sources */,
 				006850A51FC2E57400C71CED /* LPDTriggerUploadEngine.m in Sources */,

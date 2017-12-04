@@ -30,33 +30,7 @@
     
     
    
-    //[AVOSCloud set];
-    
-    LPDTriggerDB *db = [LPDTriggerDB defaultDB];
-    
-    for (NSInteger index = 0; index < 20; index++) {
-        
-        LPDTriggerLogModel *model = [LPDTriggerLogModel new];
-        model.logTag =  @"abcdef_afab";
-        model.eventTimestamp = 1511160300 + (int)(arc4random()%100);
-        model.isUpload   = NO;
-        model.count      = 5;
-        model.peroidTime = 100;
-        model.extInfo = @"hello world";
-        model.baseInfo = [LPDTriggerUtils baseInfo];
-        
-        
-        RLMRealm *realm = [RLMRealm defaultRealm];
-        [realm transactionWithBlock:^{
-            [realm addObject:model];
-        }];
-        
-    }
-    
-    LPDTriggerLogModel *model = [LPDTriggerLogModel new];
-    model.logTag =  @"abcdef_afab";
-    
-    [db checkAndUploadWithModel:model];
+  
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   
     ViewController *v = [[ViewController alloc] init];
@@ -67,9 +41,6 @@
     
     
     
-    NSMutableArray *arr =nil;
-    
-    [self test:&arr];
     return YES;
 }
 

@@ -14,6 +14,11 @@
 #import "TestProgressView.h"
 
 @interface ViewController ()
+@property (nonatomic,strong) dispatch_queue_t         queue;
+@property (nonatomic,strong) NSMutableArray             *threadArr;
+@property (nonatomic,assign) NSInteger                  total;
+@property (atomic,strong) dispatch_semaphore_t       sema;
+
 
 @end
 
@@ -23,22 +28,78 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
- 
-    TestProgressView *view = [[TestProgressView alloc]initWithFrame:CGRectMake(50, 100, 200, 50)];
-    view.backgroundColor = [UIColor yellowColor];
+    self.total = 100;
+    self.sema = dispatch_semaphore_create(1);
+    self.queue = dispatch_queue_create("com.gcd.serialQueue", DISPATCH_QUEUE_CONCURRENT);
+    self.threadArr = [NSMutableArray new];
     
-    [self.view addSubview:view];
-    
-    [NSTimer scheduledTimerWithTimeInterval:0.5 repeats:YES block:^(NSTimer * _Nonnull timer) {
-        view.progress = view.progress+0.01;
-    }];
-    
-   //  [[LPDTriggerManager defualtCenterManager] addMonitorSEL:@selector(sumWithA:B:C:) forObj:self event:nil];
-   //  [[LPDTriggerManager defualtCenterManager] addMonitorSEL:@selector(test) forCls:[self class] event:nil];
-   //  [NSThread sleepForTimeInterval:2];
-    
+    [NSThread detachNewThreadSelector:@selector(testMultiThread) toTarget:self withObject:nil];
 
 }
+
+- (void)testMultiThread{
+    
+    
+    for (NSInteger index = 0; index < 100; index++) {
+        
+     
+        NSThread *thread = [[NSThread alloc]initWithTarget:self selector:@selector(gcdThread:) object:@(index)];
+        
+        while (self.threadArr .count >= 10 ) {
+           // NSLog(@"线程已满等待释放");
+            NSThread *firstThread = [self.threadArr objectAtIndex:0];
+            if (firstThread.isFinished) {
+             //   NSLog(@"释放线程:%@",firstThread);
+                [self.threadArr removeObject:firstThread];
+            }else{
+                 [NSThread sleepForTimeInterval:0.01];
+            }
+    
+            
+        }
+        
+        [self.threadArr addObject:thread];
+        
+        [thread start];
+        
+
+    }
+    
+    [NSThread sleepForTimeInterval:5];
+    NSLog(@"end total:%zd",self.total);
+    
+}
+
+- (void)gcdThread:(NSNumber*)number{
+    
+    dispatch_async(self.queue,^{
+        
+       dispatch_semaphore_wait(self.sema, DISPATCH_TIME_FOREVER);
+        
+//        NSInteger a = [number integerValue]%2;
+//        NSLog(@"before self.total:%zd",self.total);
+//        if (a == 0) {
+//            self.total --;
+//        }else{
+//            self.total++;
+//        }
+        
+        
+        
+        NSLog(@"%@",number);
+        [NSThread sleepForTimeInterval:0.2];
+         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
+             [NSThread sleepForTimeInterval:0.01];
+              NSLog(@"--number:%@",number);
+         });
+     //   NSLog(@"after self.total:%zd",self.total);
+       dispatch_semaphore_signal(self.sema);
+
+        
+    });
+    
+}
+
 
 - (void)addRealmTestData{
     
