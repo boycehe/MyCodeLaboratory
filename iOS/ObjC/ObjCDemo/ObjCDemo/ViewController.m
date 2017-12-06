@@ -28,13 +28,26 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    self.total = 100;
-    self.sema = dispatch_semaphore_create(1);
-    self.queue = dispatch_queue_create("com.gcd.serialQueue", DISPATCH_QUEUE_CONCURRENT);
-    self.threadArr = [NSMutableArray new];
-    
-    [NSThread detachNewThreadSelector:@selector(testMultiThread) toTarget:self withObject:nil];
+//    self.total = 100;
+//    self.sema = dispatch_semaphore_create(1);
+//    self.queue = dispatch_queue_create("com.gcd.serialQueue", DISPATCH_QUEUE_CONCURRENT);
+//    self.threadArr = [NSMutableArray new];
+//
+//    [NSThread detachNewThreadSelector:@selector(testMultiThread) toTarget:self withObject:nil];
 
+    
+    
+    
+    NSLog(@"begin:%@",[NSDate date]);
+    for (NSInteger index = 0; index < 10000; index++) {
+        
+        [[NSUserDefaults standardUserDefaults] setObject:@"123" forKey:@"abc"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+    }
+    
+     NSLog(@"end:%@",[NSDate date]);
+    
 }
 
 - (void)testMultiThread{

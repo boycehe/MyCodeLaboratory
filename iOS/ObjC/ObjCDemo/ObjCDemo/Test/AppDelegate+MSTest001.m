@@ -14,9 +14,9 @@
 
 + (void)load{
     
-    Method originalMethod = class_getInstanceMethod([AppDelegate class], @selector(application: didFinishLaunchingWithOptions:));
-    Method swizzledMethod = class_getInstanceMethod([AppDelegate class], @selector(ms1_application: didFinishLaunchingWithOptions:));
-    method_exchangeImplementations(originalMethod, swizzledMethod);
+//    Method originalMethod = class_getInstanceMethod([AppDelegate class], @selector(application: didFinishLaunchingWithOptions:));
+//    Method swizzledMethod = class_getInstanceMethod([AppDelegate class], @selector(ms1_application: didFinishLaunchingWithOptions:));
+//    method_exchangeImplementations(originalMethod, swizzledMethod);
     
 }
 

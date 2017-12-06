@@ -27,7 +27,11 @@
     
     
     
+//    NSMutableDictionary *dic = nil;
+//    dic = @{@"13":@"abc"};
+//    [dic setObject:nil forKey:@"afbc"];
     
+ 
     
    
   
