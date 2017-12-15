@@ -21,6 +21,8 @@
 		006850A61FC2E57400C71CED /* LPDTriggerUploadEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 006850A41FC2E57400C71CED /* LPDTriggerUploadEngine.m */; };
 		0068B3AE1FDEB0C3003F35BB /* LPDCTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0068B3AC1FDEB0C2003F35BB /* LPDCTLabel.m */; };
 		00801D541FB97D60007EAFDD /* LPDTriggerDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 00801D531FB97D60007EAFDD /* LPDTriggerDB.m */; };
+		008518CE1FE37D590026AFB4 /* PullRefreshDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008518CC1FE37D590026AFB4 /* PullRefreshDemoViewController.m */; };
+		008518CF1FE37D590026AFB4 /* PullRefreshDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 008518CD1FE37D590026AFB4 /* PullRefreshDemoViewController.xib */; };
 		009319611FCBCC90009BC94E /* LPDFullCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0093195E1FCBCC90009BC94E /* LPDFullCameraViewController.xib */; };
 		009319621FCBCC90009BC94E /* LPDFullCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009319601FCBCC90009BC94E /* LPDFullCameraViewController.m */; };
 		00A212EB1FBC44BC00236AEA /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A212EA1FBC44BC00236AEA /* Father.m */; };
@@ -85,6 +87,9 @@
 		0068B3AD1FDEB0C3003F35BB /* LPDCTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPDCTLabel.h; sourceTree = "<group>"; };
 		00801D521FB97D60007EAFDD /* LPDTriggerDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerDB.h; sourceTree = "<group>"; };
 		00801D531FB97D60007EAFDD /* LPDTriggerDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerDB.m; sourceTree = "<group>"; };
+		008518CB1FE37D590026AFB4 /* PullRefreshDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PullRefreshDemoViewController.h; sourceTree = "<group>"; };
+		008518CC1FE37D590026AFB4 /* PullRefreshDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PullRefreshDemoViewController.m; sourceTree = "<group>"; };
+		008518CD1FE37D590026AFB4 /* PullRefreshDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PullRefreshDemoViewController.xib; sourceTree = "<group>"; };
 		0093195E1FCBCC90009BC94E /* LPDFullCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LPDFullCameraViewController.xib; sourceTree = "<group>"; };
 		0093195F1FCBCC90009BC94E /* LPDFullCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPDFullCameraViewController.h; sourceTree = "<group>"; };
 		009319601FCBCC90009BC94E /* LPDFullCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPDFullCameraViewController.m; sourceTree = "<group>"; };
@@ -174,6 +179,16 @@
 			path = ObjCDemoTests;
 			sourceTree = "<group>";
 		};
+		008518CA1FE37D160026AFB4 /* PullRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				008518CB1FE37D590026AFB4 /* PullRefreshDemoViewController.h */,
+				008518CC1FE37D590026AFB4 /* PullRefreshDemoViewController.m */,
+				008518CD1FE37D590026AFB4 /* PullRefreshDemoViewController.xib */,
+			);
+			path = PullRefresh;
+			sourceTree = "<group>";
+		};
 		0093195D1FCBCC7C009BC94E /* Test */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +266,7 @@
 		00C060261FB4006600AC4E38 /* ObjCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				008518CA1FE37D160026AFB4 /* PullRefresh */,
 				0093195D1FCBCC7C009BC94E /* Test */,
 				0049E6321FC693980006B75D /* LPDNetWorking */,
 				00AB7E4B1FB5563B00002A85 /* Demo */,
@@ -418,6 +434,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008518CF1FE37D590026AFB4 /* PullRefreshDemoViewController.xib in Resources */,
 				00C060341FB4006600AC4E38 /* LaunchScreen.storyboard in Resources */,
 				000FECF71FDFB93200A94384 /* AutolayoutViewController.xib in Resources */,
 				00C060311FB4006600AC4E38 /* Assets.xcassets in Resources */,
@@ -557,6 +574,7 @@
 				00C0602C1FB4006600AC4E38 /* ViewController.m in Sources */,
 				000FECF61FDFB93200A94384 /* AutolayoutViewController.m in Sources */,
 				0068B3AE1FDEB0C3003F35BB /* LPDCTLabel.m in Sources */,
+				008518CE1FE37D590026AFB4 /* PullRefreshDemoViewController.m in Sources */,
 				00E456BF1FBEA4D90098726C /* LPDTriggerUtils.m in Sources */,
 				00C060371FB4006600AC4E38 /* main.m in Sources */,
 				00AB7E4A1FB4A4D900002A85 /* LPDTriggerEvent.m in Sources */,
