@@ -12,6 +12,7 @@
 #import "son.h"
 #import "LPDTriggerLogModel.h"
 #import "TestProgressView.h"
+#import "LPDCTLabel.h"
 
 @interface ViewController ()
 @property (nonatomic,strong) dispatch_queue_t         queue;
@@ -28,26 +29,16 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-//    self.total = 100;
-//    self.sema = dispatch_semaphore_create(1);
-//    self.queue = dispatch_queue_create("com.gcd.serialQueue", DISPATCH_QUEUE_CONCURRENT);
-//    self.threadArr = [NSMutableArray new];
-//
-//    [NSThread detachNewThreadSelector:@selector(testMultiThread) toTarget:self withObject:nil];
-
+    
+    LPDCTLabel *label  = [[LPDCTLabel alloc]initWithFrame:CGRectMake(10, 100, 100, 30)];
+    label.attributedText = [[NSMutableAttributedString alloc]initWithString:@"寻梦环游记"];
+    label.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:label];
     
     
     
-    NSLog(@"begin:%@",[NSDate date]);
-    for (NSInteger index = 0; index < 10000; index++) {
-        
-        [[NSUserDefaults standardUserDefaults] setObject:@"123" forKey:@"abc"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
-        
-    }
     
-     NSLog(@"end:%@",[NSDate date]);
-    
+   
 }
 
 - (void)testMultiThread{

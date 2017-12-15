@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000FECF61FDFB93200A94384 /* AutolayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000FECF41FDFB93200A94384 /* AutolayoutViewController.m */; };
+		000FECF71FDFB93200A94384 /* AutolayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000FECF51FDFB93200A94384 /* AutolayoutViewController.xib */; };
 		0049E6351FC694000006B75D /* LPDBaseProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0049E6341FC694000006B75D /* LPDBaseProvider.m */; };
 		0049E6391FC7D11D0006B75D /* LPDTriggerUploadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0049E6381FC7D11D0006B75D /* LPDTriggerUploadModel.m */; };
 		006850931FC2B28600C71CED /* ObjCDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 006850921FC2B28600C71CED /* ObjCDemoTests.m */; };
@@ -17,6 +19,7 @@
 		0068509E1FC2B3D900C71CED /* LPDTriggerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E456BE1FBEA4D90098726C /* LPDTriggerUtils.m */; };
 		006850A51FC2E57400C71CED /* LPDTriggerUploadEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 006850A41FC2E57400C71CED /* LPDTriggerUploadEngine.m */; };
 		006850A61FC2E57400C71CED /* LPDTriggerUploadEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 006850A41FC2E57400C71CED /* LPDTriggerUploadEngine.m */; };
+		0068B3AE1FDEB0C3003F35BB /* LPDCTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0068B3AC1FDEB0C2003F35BB /* LPDCTLabel.m */; };
 		00801D541FB97D60007EAFDD /* LPDTriggerDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 00801D531FB97D60007EAFDD /* LPDTriggerDB.m */; };
 		009319611FCBCC90009BC94E /* LPDFullCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0093195E1FCBCC90009BC94E /* LPDFullCameraViewController.xib */; };
 		009319621FCBCC90009BC94E /* LPDFullCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009319601FCBCC90009BC94E /* LPDFullCameraViewController.m */; };
@@ -65,6 +68,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		000FECF31FDFB93200A94384 /* AutolayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutolayoutViewController.h; sourceTree = "<group>"; };
+		000FECF41FDFB93200A94384 /* AutolayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutolayoutViewController.m; sourceTree = "<group>"; };
+		000FECF51FDFB93200A94384 /* AutolayoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutolayoutViewController.xib; sourceTree = "<group>"; };
 		0049E6331FC694000006B75D /* LPDBaseProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDBaseProvider.h; sourceTree = "<group>"; };
 		0049E6341FC694000006B75D /* LPDBaseProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDBaseProvider.m; sourceTree = "<group>"; };
 		0049E6361FC6B6820006B75D /* LPDTriggerActionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerActionProtocol.h; sourceTree = "<group>"; };
@@ -75,6 +81,8 @@
 		006850941FC2B28600C71CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		006850A31FC2E57400C71CED /* LPDTriggerUploadEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerUploadEngine.h; sourceTree = "<group>"; };
 		006850A41FC2E57400C71CED /* LPDTriggerUploadEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerUploadEngine.m; sourceTree = "<group>"; };
+		0068B3AC1FDEB0C2003F35BB /* LPDCTLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPDCTLabel.m; sourceTree = "<group>"; };
+		0068B3AD1FDEB0C3003F35BB /* LPDCTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPDCTLabel.h; sourceTree = "<group>"; };
 		00801D521FB97D60007EAFDD /* LPDTriggerDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerDB.h; sourceTree = "<group>"; };
 		00801D531FB97D60007EAFDD /* LPDTriggerDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerDB.m; sourceTree = "<group>"; };
 		0093195E1FCBCC90009BC94E /* LPDFullCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LPDFullCameraViewController.xib; sourceTree = "<group>"; };
@@ -169,6 +177,8 @@
 		0093195D1FCBCC7C009BC94E /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				0068B3AD1FDEB0C3003F35BB /* LPDCTLabel.h */,
+				0068B3AC1FDEB0C2003F35BB /* LPDCTLabel.m */,
 				0093195F1FCBCC90009BC94E /* LPDFullCameraViewController.h */,
 				009319601FCBCC90009BC94E /* LPDFullCameraViewController.m */,
 				0093195E1FCBCC90009BC94E /* LPDFullCameraViewController.xib */,
@@ -176,6 +186,9 @@
 				00DEC7A01FD5347A00B3676F /* AppDelegate+MSTest001.m */,
 				00DEC7A21FD5349000B3676F /* AppDelegate+MSTest002.h */,
 				00DEC7A31FD5349000B3676F /* AppDelegate+MSTest002.m */,
+				000FECF31FDFB93200A94384 /* AutolayoutViewController.h */,
+				000FECF41FDFB93200A94384 /* AutolayoutViewController.m */,
+				000FECF51FDFB93200A94384 /* AutolayoutViewController.xib */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -406,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00C060341FB4006600AC4E38 /* LaunchScreen.storyboard in Resources */,
+				000FECF71FDFB93200A94384 /* AutolayoutViewController.xib in Resources */,
 				00C060311FB4006600AC4E38 /* Assets.xcassets in Resources */,
 				00C0602F1FB4006600AC4E38 /* Main.storyboard in Resources */,
 				009319611FCBCC90009BC94E /* LPDFullCameraViewController.xib in Resources */,
@@ -541,6 +555,8 @@
 				0049E6351FC694000006B75D /* LPDBaseProvider.m in Sources */,
 				00A212EE1FBC44CF00236AEA /* son.m in Sources */,
 				00C0602C1FB4006600AC4E38 /* ViewController.m in Sources */,
+				000FECF61FDFB93200A94384 /* AutolayoutViewController.m in Sources */,
+				0068B3AE1FDEB0C3003F35BB /* LPDCTLabel.m in Sources */,
 				00E456BF1FBEA4D90098726C /* LPDTriggerUtils.m in Sources */,
 				00C060371FB4006600AC4E38 /* main.m in Sources */,
 				00AB7E4A1FB4A4D900002A85 /* LPDTriggerEvent.m in Sources */,
