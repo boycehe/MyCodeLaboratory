@@ -1,0 +1,104 @@
+ Android/.gradle/3.3/taskArtifacts/fileHashes.bin   |  Bin 560641 -> 543291 bytes
+ .../.gradle/3.3/taskArtifacts/fileSnapshots.bin    |  Bin 18434097 -> 15626297 bytes
+ .../.gradle/3.3/taskArtifacts/taskArtifacts.bin    |  Bin 190061 -> 183593 bytes
+ .../.gradle/3.3/taskArtifacts/taskArtifacts.lock   |  Bin 17 -> 17 bytes
+ .../localClassSetAnalysis.bin                      |  Bin 3186951 -> 2580747 bytes
+ .../localClassSetAnalysis.lock                     |  Bin 17 -> 17 bytes
+ .../localJarClasspathSnapshot.bin                  |  Bin 20899 -> 19918 bytes
+ .../localJarClasspathSnapshot.lock                 |  Bin 17 -> 17 bytes
+ Android/.gradle/4.1/fileChanges/last-build.bin     |  Bin 1 -> 0 bytes
+ Android/.gradle/4.1/fileHashes/fileHashes.bin      |  Bin 264319 -> 0 bytes
+ Android/.gradle/4.1/fileHashes/fileHashes.lock     |  Bin 17 -> 0 bytes
+ .../.gradle/4.1/fileHashes/resourceHashesCache.bin |  Bin 18735 -> 0 bytes
+ Android/.gradle/4.1/taskHistory/fileSnapshots.bin  |  Bin 1024742 -> 0 bytes
+ Android/.gradle/4.1/taskHistory/taskHistory.bin    |  Bin 46278 -> 0 bytes
+ Android/.gradle/4.1/taskHistory/taskHistory.lock   |  Bin 17 -> 0 bytes
+ Android/.gradle/buildOutputCleanup/built.bin       |    0
+ .../.gradle/buildOutputCleanup/cache.properties    |    2 -
+ .../buildOutputCleanup/cache.properties.lock       |    1 -
+ Android/.idea/libraries/appcompat_v7_22_2_1.xml    |   12 +
+ .../com_android_support_appcompat_v7_22_2_1.xml    |   14 -
+ ...t_constraint_constraint_layout_1_0_0_alpha9.xml |   10 -
+ .../com_android_support_design_22_2_1.xml          |   10 -
+ .../com_android_support_support_v4_22_2_1.xml      |   15 -
+ .../libraries/constraint_layout_1_0_0_alpha9.xml   |   10 +
+ ...l => constraint_layout_solver_1_0_0_alpha9.xml} |    2 +-
+ ..._2_1_jar.xml => support_annotations_22_2_1.xml} |    6 +-
+ Android/.idea/libraries/support_v4_22_2_1.xml      |   13 +
+ Android/.idea/misc.xml                             |   15 +-
+ Android/.idea/workspace.xml                        | 1578 ++++++++++----------
+ Android/app/app.iml                                |   44 +-
+ Android/app/build.gradle                           |    4 +-
+ Android/app/src/main/AndroidManifest.xml           |   47 +-
+ .../learnandroid/Chapter10/Chapter10Activity.java  |   15 -
+ .../Chapter10/Chapter10BroadcastActivity.java      |   41 -
+ .../Chapter10/Chapter10PlayMusicActivity.java      |  109 --
+ .../Chapter10/Chapter10SMSActivity.java            |   44 -
+ .../Chapter10/Chapter10SendSMSActivity.java        |  119 --
+ .../Chapter10/Chapter10TeleActivity.java           |   58 -
+ .../Chapter10/Chapter10TeleManagerActivity.java    |   69 -
+ .../learnandroid/Chapter10/MusicService.java       |  121 --
+ .../learnandroid/Chapter10/MyIntentService.java    |   42 -
+ .../heboyce/learnandroid/Chapter10/MyReceiver.java |   21 -
+ .../learnandroid/Chapter10/MyReceiver2.java        |   19 -
+ .../heboyce/learnandroid/Chapter10/MyService.java  |   40 -
+ .../Chapter11/Chapter11MediaActivity.java          |   15 -
+ .../example/heboyce/learnandroid/MainActivity.java |    5 +-
+ Android/app/src/main/res/drawable/author.png       |  Bin 1006 -> 0 bytes
+ Android/app/src/main/res/drawable/pause.png        |  Bin 472 -> 0 bytes
+ Android/app/src/main/res/drawable/play.png         |  Bin 777 -> 0 bytes
+ Android/app/src/main/res/drawable/stop.png         |  Bin 943 -> 0 bytes
+ .../app/src/main/res/layout/activity_chapter10.xml |   14 -
+ .../res/layout/activity_chapter10_broadcast.xml    |   14 -
+ .../res/layout/activity_chapter10_play_music.xml   |   31 -
+ .../res/layout/activity_chapter10_send_sms.xml     |   34 -
+ .../src/main/res/layout/activity_chapter10_sms.xml |   27 -
+ .../main/res/layout/activity_chapter10_tele.xml    |   13 -
+ .../res/layout/activity_chapter10_tele_manager.xml |    8 -
+ .../main/res/layout/activity_chapter11_media.xml   |    9 -
+ .../res/layout/content_chapter10_play_music.xml    |    8 -
+ Android/app/src/main/res/layout/line.xml           |   20 -
+ Android/app/src/main/res/values/arrays.xml         |   28 -
+ Android/app/src/main/res/values/attrs.xml          |   12 -
+ Android/app/src/main/res/values/colors.xml         |   16 +-
+ Android/app/src/main/res/values/dimens.xml         |    1 -
+ Android/app/src/main/res/values/strings.xml        |    3 -
+ Android/app/src/main/res/values/styles.xml         |   21 -
+ Android/build.gradle                               |    2 +-
+ Android/build/intermediates/dex-cache/cache.xml    |   11 +-
+ Android/gradle/wrapper/gradle-wrapper.properties   |    4 +-
+ .../ObjCDemo/ObjCDemo.xcodeproj/project.pbxproj    |   67 +-
+ .../UserInterfaceState.xcuserstate                 |  Bin 114499 -> 107502 bytes
+ .../xcdebugger/Breakpoints_v2.xcbkptlist           |   50 -
+ iOS/ObjC/ObjCDemo/ObjCDemo/AppDelegate.m           |  147 +-
+ .../ObjCDemo/Assets.xcassets/Contents.json         |    6 -
+ .../icon_ticket_close_white.imageset/Contents.json |   22 -
+ .../icon_ticket_close_white@2x.png                 |  Bin 545 -> 0 bytes
+ .../icon_ticket_close_white@3x.png                 |  Bin 827 -> 0 bytes
+ .../icon_ticket_help_white.imageset/Contents.json  |   22 -
+ .../icon_ticket_help_white@2x.png                  |  Bin 1714 -> 0 bytes
+ .../icon_ticket_help_white@3x.png                  |  Bin 2679 -> 0 bytes
+ .../image_pop_commodity.imageset/Contents.json     |   22 -
+ .../image_pop_commodity@2x.png                     |  Bin 599377 -> 0 bytes
+ .../image_pop_commodity@3x.png                     |  Bin 1312201 -> 0 bytes
+ .../image_pop_ticket.imageset/Contents.json        |   22 -
+ .../image_pop_ticket@2x.png                        |  Bin 178109 -> 0 bytes
+ .../image_pop_ticket@3x.png                        |  Bin 326076 -> 0 bytes
+ .../ObjCDemo/ObjCDemo/Base.lproj/Main.storyboard   |    8 +-
+ iOS/ObjC/ObjCDemo/ObjCDemo/Demo/TestProgressView.h |   15 -
+ iOS/ObjC/ObjCDemo/ObjCDemo/Demo/TestProgressView.m |   87 --
+ iOS/ObjC/ObjCDemo/ObjCDemo/Info.plist              |    2 +
+ .../ObjCDemo/ObjCDemo/Test/AppDelegate+MSTest001.h |   13 -
+ .../ObjCDemo/ObjCDemo/Test/AppDelegate+MSTest001.m |   30 -
+ .../ObjCDemo/ObjCDemo/Test/AppDelegate+MSTest002.h |   13 -
+ .../ObjCDemo/ObjCDemo/Test/AppDelegate+MSTest002.m |   33 -
+ .../ObjCDemo/Test/AutolayoutViewController.h       |   13 -
+ .../ObjCDemo/Test/AutolayoutViewController.m       |   37 -
+ .../ObjCDemo/Test/AutolayoutViewController.xib     |   42 -
+ iOS/ObjC/ObjCDemo/ObjCDemo/Test/LPDCTLabel.h       |   21 -
+ iOS/ObjC/ObjCDemo/ObjCDemo/Test/LPDCTLabel.m       |  159 --
+ .../ObjCDemo/Test/LPDFullCameraViewController.h    |   13 -
+ .../ObjCDemo/Test/LPDFullCameraViewController.m    |   44 -
+ .../ObjCDemo/Test/LPDFullCameraViewController.xib  |  108 --
+ iOS/ObjC/ObjCDemo/ObjCDemo/ViewController.m        |   81 +-
+ 103 files changed, 888 insertions(+), 2966 deletions(-)
