@@ -16,6 +16,7 @@
 #import "ViewController.h"
 #import "AutolayoutViewController.h"
 #import "PullRefreshDemoViewController.h"
+#import <ReactiveObjC/ReactiveObjC.h>
 
 @interface AppDelegate ()
 
@@ -27,22 +28,124 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    
-    
-//    NSMutableDictionary *dic = nil;
-//    dic = @{@"13":@"abc"};
-//    [dic setObject:nil forKey:@"afbc"];
-    
-    NSLog(@"abc:%@",NSStringFromCGRect([[UIScreen mainScreen]bounds]));
-    
-   /*
-    iPhone X {{0, 0}, {375, 812}}
-    iPhone 8 {{0, 0}, {375, 667}}
-    iPhone SE{{0, 0}, {320, 568}}
-    iPhone 8 Plus {{0, 0}, {414, 736}}
-    */
-    
+    /*
+  RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+    [subscriber sendNext:@1];
+    [subscriber sendNext:@2];
+    [subscriber sendNext:@3];
+    [subscriber sendNext:@4];
+    [subscriber sendCompleted];
+    return nil;
+  }];
+  RACSignal *bindSignal = [signal bind:^RACSignalBindBlock _Nonnull{
+    return ^(NSNumber *value, BOOL *stop) {
+      value = @(value.integerValue * value.integerValue);
+      return [RACSignal return:value];
+    };
+  }];
+
+  [signal subscribeNext:^(id  _Nullable x) {
+    NSLog(@"signal: %@", x);
+  }];
+     
+   [bindSignal subscribeNext:^(id  _Nullable x) {
+     NSLog(@"bindSignal: %@", x);
+   }];
   
+  */
+  
+  /*
+  RACSubject *subject = [RACSubject subject];
+  
+  // Subscriber 1
+  [subject subscribeNext:^(id  _Nullable x) {
+    NSLog(@"1st Sub: %@", x);
+  }];
+  [subject sendNext:@1];
+  
+  // Subscriber 2
+  [subject subscribeNext:^(id  _Nullable x) {
+    NSLog(@"2nd Sub: %@", x);
+  }];
+  [subject sendNext:@2];
+  
+  // Subscriber 3
+  [subject subscribeNext:^(id  _Nullable x) {
+    NSLog(@"3rd Sub: %@", x);
+  }];
+  [subject sendNext:@3];
+  [subject sendCompleted];
+*/
+  /*
+  RACBehaviorSubject *subject = [RACBehaviorSubject subject];
+  
+  [subject subscribeNext:^(id  _Nullable x) {
+    NSLog(@"1st Sub: %@", x);
+  }];
+  [subject sendNext:@1];
+  
+  [subject subscribeNext:^(id  _Nullable x) {
+    NSLog(@"2nd Sub: %@", x);
+  }];
+  [subject sendNext:@2];
+  
+  [subject subscribeNext:^(id  _Nullable x) {
+    NSLog(@"3rd Sub: %@", x);
+  }];
+  [subject sendNext:@3];
+  [subject sendCompleted];
+  
+  */
+  /*
+  RACSequence *sequence = [RACSequence sequenceWithHeadBlock:^id _Nullable{
+    return @1;
+  } tailBlock:^RACSequence * _Nonnull{
+    return [RACSequence sequenceWithHeadBlock:^id _Nullable{
+      return @2;
+    } tailBlock:^RACSequence * _Nonnull{
+      return [RACSequence return:@3];
+    }];
+  }];
+  RACSequence *bindSequence = [sequence bind:^RACSequenceBindBlock _Nonnull{
+    return ^(NSNumber *value, BOOL *stop) {
+      NSLog(@"RACSequenceBindBlock: %@", value);
+      value = @(value.integerValue * 2);
+      return [RACSequence return:value];
+    };
+  }];
+  NSLog(@"sequence:     head = (%@), tail=(%@)", sequence.head, sequence.tail);
+  NSLog(@"BindSequence: head = (%@), tail=(%@)", bindSequence.head, bindSequence.tail);
+  */
+  
+  RACCommand *command = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(NSNumber * _Nullable input) {
+    return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+      NSInteger integer = [input integerValue];
+      NSLog(@"input:%zd",integer);
+      for (NSInteger i = 0; i < integer; i++) {
+        [subscriber sendNext:@(i)];
+      }
+      [subscriber sendCompleted];
+      return nil;
+    }];
+  }];
+  [[command.executionSignals switchToLatest] subscribeNext:^(id  _Nullable x) {
+    NSLog(@"%@", x);
+  }];
+  
+  [command execute:@1];
+   [command execute:@2];
+   [command execute:@3];
+//  [RACScheduler.mainThreadScheduler afterDelay:0.1
+//                                      schedule:^{
+//                                        [command execute:@3];
+//                                      }];
+//  [RACScheduler.mainThreadScheduler afterDelay:0.2
+//                                      schedule:^{
+//                                        [command execute:@3];
+//                                      }];
+ 
+ 
+
   
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   

@@ -100,7 +100,7 @@
             CGSize sizeArray[glyphCount];
             CFIndex indexArray[glyphCount];
             
-            CTRunGetPositions(run, range, pointArray);
+          CTRunGetPositions(run, range, pointArray);
             CTRunGetAdvances(run, range, sizeArray);
             CTRunGetStringIndices(run, range, indexArray);
             

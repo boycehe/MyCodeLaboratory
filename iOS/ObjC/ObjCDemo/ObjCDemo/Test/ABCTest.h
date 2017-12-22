@@ -1,5 +1,5 @@
 //
-//  BHRollbackEngine.h
+//  ABCTest.h
 //  ObjCDemo
 //
 //  Created by heboyce on 2017/12/20.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
+@interface ABCTest : NSObject
 
-@interface BHRollbackEngine : NSObject
 @end

@@ -35,6 +35,7 @@
 		008519801FEA69DF0026AFB4 /* MKNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 008519731FEA69DF0026AFB4 /* MKNetworkRequest.m */; };
 		008519811FEA69DF0026AFB4 /* MKNetworkHost.m in Sources */ = {isa = PBXBuildFile; fileRef = 008519761FEA69DF0026AFB4 /* MKNetworkHost.m */; };
 		008519841FEA84270026AFB4 /* BHRollbackEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 008519831FEA84270026AFB4 /* BHRollbackEngine.m */; };
+		008519871FEA89F60026AFB4 /* ABCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 008519861FEA89F60026AFB4 /* ABCTest.m */; };
 		009319611FCBCC90009BC94E /* LPDFullCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0093195E1FCBCC90009BC94E /* LPDFullCameraViewController.xib */; };
 		009319621FCBCC90009BC94E /* LPDFullCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009319601FCBCC90009BC94E /* LPDFullCameraViewController.m */; };
 		00A212EB1FBC44BC00236AEA /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A212EA1FBC44BC00236AEA /* Father.m */; };
@@ -127,6 +128,8 @@
 		008519761FEA69DF0026AFB4 /* MKNetworkHost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkHost.m; sourceTree = "<group>"; };
 		008519821FEA84270026AFB4 /* BHRollbackEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHRollbackEngine.h; sourceTree = "<group>"; };
 		008519831FEA84270026AFB4 /* BHRollbackEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BHRollbackEngine.m; sourceTree = "<group>"; };
+		008519851FEA89F60026AFB4 /* ABCTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABCTest.h; sourceTree = "<group>"; };
+		008519861FEA89F60026AFB4 /* ABCTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABCTest.m; sourceTree = "<group>"; };
 		0093195E1FCBCC90009BC94E /* LPDFullCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LPDFullCameraViewController.xib; sourceTree = "<group>"; };
 		0093195F1FCBCC90009BC94E /* LPDFullCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPDFullCameraViewController.h; sourceTree = "<group>"; };
 		009319601FCBCC90009BC94E /* LPDFullCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPDFullCameraViewController.m; sourceTree = "<group>"; };
@@ -296,6 +299,8 @@
 				000FECF31FDFB93200A94384 /* AutolayoutViewController.h */,
 				000FECF41FDFB93200A94384 /* AutolayoutViewController.m */,
 				000FECF51FDFB93200A94384 /* AutolayoutViewController.xib */,
+				008519851FEA89F60026AFB4 /* ABCTest.h */,
+				008519861FEA89F60026AFB4 /* ABCTest.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -691,6 +696,7 @@
 				006850A51FC2E57400C71CED /* LPDTriggerUploadEngine.m in Sources */,
 				0085197F1FEA69DF0026AFB4 /* NSDate+RFC1123.m in Sources */,
 				00C6F3BD1FCE671600054DF7 /* TestProgressView.m in Sources */,
+				008519871FEA89F60026AFB4 /* ABCTest.m in Sources */,
 				009319621FCBCC90009BC94E /* LPDFullCameraViewController.m in Sources */,
 				008519771FEA69DF0026AFB4 /* MKCache.m in Sources */,
 				0085197A1FEA69DF0026AFB4 /* NSString+MKNKAdditions.m in Sources */,
