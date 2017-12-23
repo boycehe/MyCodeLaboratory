@@ -17,7 +17,7 @@
 #import "AutolayoutViewController.h"
 #import "PullRefreshDemoViewController.h"
 #import <ReactiveObjC/ReactiveObjC.h>
-
+#import "TTObj.h"
 @interface AppDelegate ()
 
 @end
@@ -116,7 +116,7 @@
   NSLog(@"sequence:     head = (%@), tail=(%@)", sequence.head, sequence.tail);
   NSLog(@"BindSequence: head = (%@), tail=(%@)", bindSequence.head, bindSequence.tail);
   */
-  
+  /*
   RACCommand *command = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(NSNumber * _Nullable input) {
     return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
       NSInteger integer = [input integerValue];
@@ -135,6 +135,7 @@
   [command execute:@1];
    [command execute:@2];
    [command execute:@3];
+   */
 //  [RACScheduler.mainThreadScheduler afterDelay:0.1
 //                                      schedule:^{
 //                                        [command execute:@3];
@@ -144,7 +145,10 @@
 //                                        [command execute:@3];
 //                                      }];
  
- 
+
+  TTObj *obj = [TTObj new];
+  [obj setObject:@"123" forKey:@"abc"];
+  NSLog(@"obj:%@",obj);
 
   
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

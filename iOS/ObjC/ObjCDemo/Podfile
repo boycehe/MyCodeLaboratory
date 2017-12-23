@@ -6,6 +6,7 @@ def mainPods
     pod 'Realm'
     pod 'AVOSCloud'
     pod 'Reachability', '~> 3.2'
+    pod 'AFNetworking'
 end
 
 target 'ObjCDemo' do

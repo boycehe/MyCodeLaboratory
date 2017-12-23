@@ -248,8 +248,7 @@ NSString *const kMKCacheDefaultDirectoryName = @"com.mknetworkkit.mkcache";
   }
   
   NSURLSession *sessionToUse = self.defaultSession;
-  
-  if(request.isSSL || request.requiresAuthentication) {
+    if(request.isSSL || request.requiresAuthentication) {
     
     sessionToUse = self.ephemeralSession;
   }
