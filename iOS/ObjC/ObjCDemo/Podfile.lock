@@ -15,6 +15,7 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - AVOSCloud (7.3.2)
+  - MJRefresh (3.1.15.1)
   - Reachability (3.2)
   - ReactiveObjC (3.0.0)
   - Realm (3.0.1):
@@ -24,6 +25,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - AVOSCloud
+  - MJRefresh
   - Reachability (~> 3.2)
   - ReactiveObjC
   - Realm
@@ -31,10 +33,11 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   AVOSCloud: 8a18125408bac1fc73c19ceb897db4ec4e0e6044
+  MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
   Realm: ba6144c74f835f7497791f6599d63a7755377b83
 
-PODFILE CHECKSUM: 56efcde5e379050b8b9174564a71c973d392f239
+PODFILE CHECKSUM: 3dfac1423bcc992597479f5513a758e6e6303012
 
 COCOAPODS: 1.4.0.beta.2
