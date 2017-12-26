@@ -18,6 +18,7 @@
 #import "PullRefreshDemoViewController.h"
 #import <ReactiveObjC/ReactiveObjC.h>
 #import "TTObj.h"
+#import "Father.h"
 @interface AppDelegate ()
 
 @end
@@ -146,10 +147,11 @@
 //                                      }];
  
 
-  TTObj *obj = [TTObj new];
-  [obj setObject:@"123" forKey:@"abc"];
-  NSLog(@"obj:%@",obj);
+ 
+  Father *f = [Father new];
+  [f setValue:@"boyce" forKey:@"namef"];
 
+  NSLog(@"father:%@",f.namef);
   
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   

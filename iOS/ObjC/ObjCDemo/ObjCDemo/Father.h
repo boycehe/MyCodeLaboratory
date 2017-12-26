@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface Father : NSObject
+@property (nonatomic,strong) NSString         *namef;
 + (void)objCls;
 @end

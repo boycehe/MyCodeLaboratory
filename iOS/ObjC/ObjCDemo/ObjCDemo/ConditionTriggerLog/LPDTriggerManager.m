@@ -45,6 +45,8 @@
 #define LPDTriggerFailSuffix      @"fail"
 #define LPDTriggerClassPrefix     @"lpdBrYsJ_"
 
+typedef void (^MKNKHandler)(NSObject *a,...);
+
 @interface LPDTriggerManager()
 @property (nonatomic,strong) NSMutableDictionary         *notificationStoreDic;
 @end
@@ -110,8 +112,11 @@ void eventClassStatisticAnalyse(id self,SEL _cmd ,va_list argp){
     }else{
         objc_msgSend(self,oSel,argp);
     }
-    
-   // object_setClass(self, metaClass);
+  
+
+  
+  
+   object_setClass(self, metaClass);
     
 }
 
@@ -177,6 +182,7 @@ void eventInstanceStatisticAnalyse(id self,SEL _cmd ,va_list argp){
     class_addMethod(metaCls,nSel,(IMP)eventClassStatisticAnalyse,method_getTypeEncoding(orginMethod));
     Method nMethod = class_getClassMethod(cls, nSel);
     method_exchangeImplementations(orginMethod,nMethod);
+  
     
   
 }

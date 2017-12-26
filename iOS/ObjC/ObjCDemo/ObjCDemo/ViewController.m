@@ -13,6 +13,7 @@
 #import "LPDTriggerLogModel.h"
 #import "TestProgressView.h"
 #import "LPDCTLabel.h"
+#import "NSObject+LPDRequest.h"
 
 @interface ViewController ()
 @property (nonatomic,strong) dispatch_queue_t         queue;
@@ -34,9 +35,9 @@
     label.attributedText = [[NSMutableAttributedString alloc]initWithString:@"寻梦环游记"];
     label.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:label];
-    
-    
-    
+  
+  
+
     
    
 }

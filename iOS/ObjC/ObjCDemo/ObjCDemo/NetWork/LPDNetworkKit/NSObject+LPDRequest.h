@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LPDRACRequest.h"
 
 @interface NSObject (LPDRequest)
+@property (nonatomic,strong,readonly) LPDRACRequest         *racRequest;
 
 - (void)request;
 
