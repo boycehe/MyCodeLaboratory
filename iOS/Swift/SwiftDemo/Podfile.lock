@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.6.0)
+  - Kingfisher (4.6.1)
+  - LLCycleScrollView (1.4.4):
+    - Kingfisher
+  - RxCocoa (4.1.1):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.1)
+  - SnapKit (4.0.0)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - Kingfisher
+  - LLCycleScrollView
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
+  - SnapKit (~> 4.0.0)
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
+  LLCycleScrollView: 7dcfb96bae6947b5de446a868e80ff0db2f047ae
+  RxCocoa: fd0862fd2df95fa55562ad28ffd2522c25eb4a85
+  RxSwift: c6e3b1c7b325c7d121cd4327e9d98b7ed746b570
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: b61b8e2d4027e93f97fe56d4ac14416b942c2551
+
+COCOAPODS: 1.4.0.beta.2

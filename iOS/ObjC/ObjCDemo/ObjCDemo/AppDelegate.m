@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "LPDTriggerUtils.h"
-#import <AVOSCloud/AVOSCloud.h>
 #import "LPDTriggerDB.h"
 #import "LPDTriggerLogModel.h"
 #import "LPDFullCameraViewController.h"
@@ -19,6 +18,7 @@
 #import <ReactiveObjC/ReactiveObjC.h>
 #import "TTObj.h"
 #import "Father.h"
+#import <AFNetworking/AFNetworking.h>
 @interface AppDelegate ()
 
 @end
@@ -29,15 +29,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    /*
-  RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-    [subscriber sendNext:@1];
-    [subscriber sendNext:@2];
-    [subscriber sendNext:@3];
-    [subscriber sendNext:@4];
-    [subscriber sendCompleted];
-    return nil;
-  }];
+  
+  NSMutableArray *arr = [NSMutableArray array];
+  
+  if(12 > ((NSInteger)arr.count - 1)){
+    NSLog(@"aaaaaaaaaaaaaaaa");
+  }else{
+    NSLog(@"bbbbbbbbbbbbb");
+  }
+  
+
+  
+  
+  /*
   RACSignal *bindSignal = [signal bind:^RACSignalBindBlock _Nonnull{
     return ^(NSNumber *value, BOOL *stop) {
       value = @(value.integerValue * value.integerValue);
@@ -45,16 +49,14 @@
     };
   }];
 
-  [signal subscribeNext:^(id  _Nullable x) {
-    NSLog(@"signal: %@", x);
-  }];
+ 
      
    [bindSignal subscribeNext:^(id  _Nullable x) {
      NSLog(@"bindSignal: %@", x);
    }];
   
+
   */
-  
   /*
   RACSubject *subject = [RACSubject subject];
   
@@ -62,22 +64,27 @@
   [subject subscribeNext:^(id  _Nullable x) {
     NSLog(@"1st Sub: %@", x);
   }];
-  [subject sendNext:@1];
+//  [subject sendNext:@1];
   
+  [subject performSelector:@selector(sendNext:) withObject:@1 afterDelay:3];
   // Subscriber 2
   [subject subscribeNext:^(id  _Nullable x) {
     NSLog(@"2nd Sub: %@", x);
   }];
-  [subject sendNext:@2];
+//  [subject sendNext:@2];
   
   // Subscriber 3
   [subject subscribeNext:^(id  _Nullable x) {
     NSLog(@"3rd Sub: %@", x);
   }];
-  [subject sendNext:@3];
-  [subject sendCompleted];
-*/
-  /*
+  
+  
+  
+ // [subject sendNext:@3];
+ // [subject sendCompleted];
+ 
+
+  
   RACBehaviorSubject *subject = [RACBehaviorSubject subject];
   
   [subject subscribeNext:^(id  _Nullable x) {
@@ -146,26 +153,31 @@
 //                                        [command execute:@3];
 //                                      }];
  
+  
 
- 
-  Father *f = [Father new];
-  [f setValue:@"boyce" forKey:@"namef"];
-
-  NSLog(@"father:%@",f.namef);
   
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   
-    PullRefreshDemoViewController *v = [[PullRefreshDemoViewController alloc] init];
+    ViewController *v = [[ViewController alloc] init];
     self.window.rootViewController = v;
-    
+  
     [self.window makeKeyAndVisible];
-    
+  
     
     
     
     return YES;
 }
 
+- (void)testmm{
+  
+  while (YES) {
+    [NSThread sleepForTimeInterval:1];
+    NSLog(@"hh");
+  }
+  
+  
+}
 
 - (void)test:(NSMutableArray**)arr{
     

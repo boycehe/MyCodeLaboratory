@@ -1,0 +1,21 @@
+platform :ios, '8.0'
+use_frameworks!
+
+def mainPods
+  
+  pod 'Alamofire', '~> 4.5'
+  pod 'SwiftyJSON'
+  pod 'RxSwift',    '~> 4.0'
+  pod 'RxCocoa',    '~> 4.0'
+  pod 'SnapKit', '~> 4.0.0'
+  pod 'Kingfisher'
+  pod 'LLCycleScrollView'
+
+	
+end
+
+target 'SwiftDemo' do
+	mainPods
+end
+
+

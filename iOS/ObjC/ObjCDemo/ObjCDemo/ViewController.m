@@ -14,6 +14,7 @@
 #import "TestProgressView.h"
 #import "LPDCTLabel.h"
 #import "NSObject+LPDRequest.h"
+#import "LPDReachability.h"
 
 @interface ViewController ()
 @property (nonatomic,strong) dispatch_queue_t         queue;
@@ -31,15 +32,14 @@
     
     [super viewDidLoad];
     
-    LPDCTLabel *label  = [[LPDCTLabel alloc]initWithFrame:CGRectMake(10, 100, 100, 30)];
-    label.attributedText = [[NSMutableAttributedString alloc]initWithString:@"寻梦环游记"];
-    label.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:label];
   
+  LPDReachability *reachability = [LPDReachability reachabilityForInternetConnection];
+  [reachability startNotifier];
   
-
-    
-   
+  LPDNetworkStatus status = [reachability currentReachabilityStatus];
+  
+  NSLog(@"LPDNetworkStatus:%zd",status);
+  
 }
 
 - (void)testMultiThread{

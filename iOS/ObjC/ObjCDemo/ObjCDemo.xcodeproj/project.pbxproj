@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		000FECF61FDFB93200A94384 /* AutolayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000FECF41FDFB93200A94384 /* AutolayoutViewController.m */; };
 		000FECF71FDFB93200A94384 /* AutolayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000FECF51FDFB93200A94384 /* AutolayoutViewController.xib */; };
+		00189F171FF4F501007A883F /* LPDSignalPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 00189F161FF4F501007A883F /* LPDSignalPool.m */; };
 		004226DB1FECEEC400BD44F7 /* TTObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 004226DA1FECEEC400BD44F7 /* TTObj.m */; };
 		004226DF1FEE576500BD44F7 /* LPDRACRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 004226DE1FEE576500BD44F7 /* LPDRACRequest.m */; };
 		004226E21FEE578300BD44F7 /* LPDRequestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 004226E11FEE578300BD44F7 /* LPDRequestObject.m */; };
@@ -24,6 +25,7 @@
 		006850A51FC2E57400C71CED /* LPDTriggerUploadEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 006850A41FC2E57400C71CED /* LPDTriggerUploadEngine.m */; };
 		006850A61FC2E57400C71CED /* LPDTriggerUploadEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 006850A41FC2E57400C71CED /* LPDTriggerUploadEngine.m */; };
 		0068B3AE1FDEB0C3003F35BB /* LPDCTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0068B3AC1FDEB0C2003F35BB /* LPDCTLabel.m */; };
+		0072A45E200DB6C100419D36 /* LPDReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0072A45D200DB6C100419D36 /* LPDReachability.m */; };
 		00801D541FB97D60007EAFDD /* LPDTriggerDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 00801D531FB97D60007EAFDD /* LPDTriggerDB.m */; };
 		008518CE1FE37D590026AFB4 /* PullRefreshDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008518CC1FE37D590026AFB4 /* PullRefreshDemoViewController.m */; };
 		008518CF1FE37D590026AFB4 /* PullRefreshDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 008518CD1FE37D590026AFB4 /* PullRefreshDemoViewController.xib */; };
@@ -46,6 +48,7 @@
 		00A212EE1FBC44CF00236AEA /* son.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A212ED1FBC44CF00236AEA /* son.m */; };
 		00AB7E4A1FB4A4D900002A85 /* LPDTriggerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AB7E491FB4A4D900002A85 /* LPDTriggerEvent.m */; };
 		00AB7E4E1FB5565400002A85 /* ReactiveObjCDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AB7E4D1FB5565400002A85 /* ReactiveObjCDemoViewController.m */; };
+		00B7F2C620178D0E0083CC58 /* LearnRACSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B7F2C520178D0E0083CC58 /* LearnRACSignal.m */; };
 		00C060291FB4006600AC4E38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C060281FB4006600AC4E38 /* AppDelegate.m */; };
 		00C0602C1FB4006600AC4E38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C0602B1FB4006600AC4E38 /* ViewController.m */; };
 		00C0602F1FB4006600AC4E38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C0602D1FB4006600AC4E38 /* Main.storyboard */; };
@@ -90,6 +93,8 @@
 		000FECF31FDFB93200A94384 /* AutolayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutolayoutViewController.h; sourceTree = "<group>"; };
 		000FECF41FDFB93200A94384 /* AutolayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutolayoutViewController.m; sourceTree = "<group>"; };
 		000FECF51FDFB93200A94384 /* AutolayoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutolayoutViewController.xib; sourceTree = "<group>"; };
+		00189F151FF4F501007A883F /* LPDSignalPool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDSignalPool.h; sourceTree = "<group>"; };
+		00189F161FF4F501007A883F /* LPDSignalPool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDSignalPool.m; sourceTree = "<group>"; };
 		004226D91FECEEC400BD44F7 /* TTObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTObj.h; sourceTree = "<group>"; };
 		004226DA1FECEEC400BD44F7 /* TTObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTObj.m; sourceTree = "<group>"; };
 		004226DD1FEE576500BD44F7 /* LPDRACRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDRACRequest.h; sourceTree = "<group>"; };
@@ -110,6 +115,8 @@
 		006850A41FC2E57400C71CED /* LPDTriggerUploadEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerUploadEngine.m; sourceTree = "<group>"; };
 		0068B3AC1FDEB0C2003F35BB /* LPDCTLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPDCTLabel.m; sourceTree = "<group>"; };
 		0068B3AD1FDEB0C3003F35BB /* LPDCTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPDCTLabel.h; sourceTree = "<group>"; };
+		0072A45C200DB6C100419D36 /* LPDReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPDReachability.h; sourceTree = "<group>"; };
+		0072A45D200DB6C100419D36 /* LPDReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPDReachability.m; sourceTree = "<group>"; };
 		00801D521FB97D60007EAFDD /* LPDTriggerDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPDTriggerDB.h; sourceTree = "<group>"; };
 		00801D531FB97D60007EAFDD /* LPDTriggerDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerDB.m; sourceTree = "<group>"; };
 		008518CB1FE37D590026AFB4 /* PullRefreshDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PullRefreshDemoViewController.h; sourceTree = "<group>"; };
@@ -153,6 +160,8 @@
 		00AB7E491FB4A4D900002A85 /* LPDTriggerEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPDTriggerEvent.m; sourceTree = "<group>"; };
 		00AB7E4C1FB5565400002A85 /* ReactiveObjCDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveObjCDemoViewController.h; sourceTree = "<group>"; };
 		00AB7E4D1FB5565400002A85 /* ReactiveObjCDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveObjCDemoViewController.m; sourceTree = "<group>"; };
+		00B7F2C420178D0E0083CC58 /* LearnRACSignal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LearnRACSignal.h; sourceTree = "<group>"; };
+		00B7F2C520178D0E0083CC58 /* LearnRACSignal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnRACSignal.m; sourceTree = "<group>"; };
 		00C060241FB4006600AC4E38 /* ObjCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C060271FB4006600AC4E38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		00C060281FB4006600AC4E38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -222,6 +231,8 @@
 				004226E11FEE578300BD44F7 /* LPDRequestObject.m */,
 				004226E31FEEBC4300BD44F7 /* NSObject+LPDRequest.h */,
 				004226E41FEEBC4300BD44F7 /* NSObject+LPDRequest.m */,
+				00189F151FF4F501007A883F /* LPDSignalPool.h */,
+				00189F161FF4F501007A883F /* LPDSignalPool.m */,
 			);
 			path = LPDNetworkKit;
 			sourceTree = "<group>";
@@ -242,6 +253,15 @@
 				006850941FC2B28600C71CED /* Info.plist */,
 			);
 			path = ObjCDemoTests;
+			sourceTree = "<group>";
+		};
+		0072A458200DB37600419D36 /* LPDReachability */ = {
+			isa = PBXGroup;
+			children = (
+				0072A45C200DB6C100419D36 /* LPDReachability.h */,
+				0072A45D200DB6C100419D36 /* LPDReachability.m */,
+			);
+			path = LPDReachability;
 			sourceTree = "<group>";
 		};
 		008518CA1FE37D160026AFB4 /* PullRefresh */ = {
@@ -366,6 +386,15 @@
 			path = Demo;
 			sourceTree = "<group>";
 		};
+		00B7F2C320178CD50083CC58 /* LearnRAC */ = {
+			isa = PBXGroup;
+			children = (
+				00B7F2C420178D0E0083CC58 /* LearnRACSignal.h */,
+				00B7F2C520178D0E0083CC58 /* LearnRACSignal.m */,
+			);
+			path = LearnRAC;
+			sourceTree = "<group>";
+		};
 		00C0601B1FB4006600AC4E38 = {
 			isa = PBXGroup;
 			children = (
@@ -391,6 +420,8 @@
 		00C060261FB4006600AC4E38 /* ObjCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				00B7F2C320178CD50083CC58 /* LearnRAC */,
+				0072A458200DB37600419D36 /* LPDReachability */,
 				008519391FEA69C70026AFB4 /* NetWork */,
 				008518D01FE3C5250026AFB4 /* BHRollback */,
 				008518CA1FE37D160026AFB4 /* PullRefresh */,
@@ -708,8 +739,10 @@
 				0068B3AE1FDEB0C3003F35BB /* LPDCTLabel.m in Sources */,
 				008518CE1FE37D590026AFB4 /* PullRefreshDemoViewController.m in Sources */,
 				008519841FEA84270026AFB4 /* BHRollbackEngine.m in Sources */,
+				00189F171FF4F501007A883F /* LPDSignalPool.m in Sources */,
 				00E456BF1FBEA4D90098726C /* LPDTriggerUtils.m in Sources */,
 				00C060371FB4006600AC4E38 /* main.m in Sources */,
+				00B7F2C620178D0E0083CC58 /* LearnRACSignal.m in Sources */,
 				004226E51FEEBC4300BD44F7 /* NSObject+LPDRequest.m in Sources */,
 				00AB7E4A1FB4A4D900002A85 /* LPDTriggerEvent.m in Sources */,
 				008519811FEA69DF0026AFB4 /* MKNetworkHost.m in Sources */,
@@ -734,6 +767,7 @@
 				008519771FEA69DF0026AFB4 /* MKCache.m in Sources */,
 				0085197A1FEA69DF0026AFB4 /* NSString+MKNKAdditions.m in Sources */,
 				00DC96AA1FB93CF500EBB741 /* LPDTriggerManager.m in Sources */,
+				0072A45E200DB6C100419D36 /* LPDReachability.m in Sources */,
 				004226DB1FECEEC400BD44F7 /* TTObj.m in Sources */,
 				0085197C1FEA69DF0026AFB4 /* UIAlertView+MKNKAdditions.m in Sources */,
 			);

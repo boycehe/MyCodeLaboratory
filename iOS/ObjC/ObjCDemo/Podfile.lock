@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - AVOSCloud (7.3.2)
+  - AVOSCloud (8.0.6)
   - MJRefresh (3.1.15.1)
   - Reachability (3.2)
   - ReactiveObjC (3.0.0)
@@ -32,7 +32,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  AVOSCloud: 8a18125408bac1fc73c19ceb897db4ec4e0e6044
+  AVOSCloud: 3fc5837eb4019f75eecd3064ed79d92656cbe2b5
   MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
