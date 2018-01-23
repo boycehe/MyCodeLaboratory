@@ -19,6 +19,8 @@
 #import "TTObj.h"
 #import "Father.h"
 #import <AFNetworking/AFNetworking.h>
+#import "LearnRACSignal.h"
+
 @interface AppDelegate ()
 
 @end
@@ -30,136 +32,13 @@
     // Override point for customization after application launch.
     
   
-  NSMutableArray *arr = [NSMutableArray array];
-  
-  if(12 > ((NSInteger)arr.count - 1)){
-    NSLog(@"aaaaaaaaaaaaaaaa");
-  }else{
-    NSLog(@"bbbbbbbbbbbbb");
-  }
-  
-
+   LearnRACSignal *learnSingal = [[LearnRACSignal alloc] init];
   
   
-  /*
-  RACSignal *bindSignal = [signal bind:^RACSignalBindBlock _Nonnull{
-    return ^(NSNumber *value, BOOL *stop) {
-      value = @(value.integerValue * value.integerValue);
-      return [RACSignal return:value];
-    };
-  }];
-
- 
-     
-   [bindSignal subscribeNext:^(id  _Nullable x) {
-     NSLog(@"bindSignal: %@", x);
-   }];
+  self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   
-
-  */
-  /*
-  RACSubject *subject = [RACSubject subject];
-  
-  // Subscriber 1
-  [subject subscribeNext:^(id  _Nullable x) {
-    NSLog(@"1st Sub: %@", x);
-  }];
-//  [subject sendNext:@1];
-  
-  [subject performSelector:@selector(sendNext:) withObject:@1 afterDelay:3];
-  // Subscriber 2
-  [subject subscribeNext:^(id  _Nullable x) {
-    NSLog(@"2nd Sub: %@", x);
-  }];
-//  [subject sendNext:@2];
-  
-  // Subscriber 3
-  [subject subscribeNext:^(id  _Nullable x) {
-    NSLog(@"3rd Sub: %@", x);
-  }];
-  
-  
-  
- // [subject sendNext:@3];
- // [subject sendCompleted];
- 
-
-  
-  RACBehaviorSubject *subject = [RACBehaviorSubject subject];
-  
-  [subject subscribeNext:^(id  _Nullable x) {
-    NSLog(@"1st Sub: %@", x);
-  }];
-  [subject sendNext:@1];
-  
-  [subject subscribeNext:^(id  _Nullable x) {
-    NSLog(@"2nd Sub: %@", x);
-  }];
-  [subject sendNext:@2];
-  
-  [subject subscribeNext:^(id  _Nullable x) {
-    NSLog(@"3rd Sub: %@", x);
-  }];
-  [subject sendNext:@3];
-  [subject sendCompleted];
-  
-  */
-  /*
-  RACSequence *sequence = [RACSequence sequenceWithHeadBlock:^id _Nullable{
-    return @1;
-  } tailBlock:^RACSequence * _Nonnull{
-    return [RACSequence sequenceWithHeadBlock:^id _Nullable{
-      return @2;
-    } tailBlock:^RACSequence * _Nonnull{
-      return [RACSequence return:@3];
-    }];
-  }];
-  RACSequence *bindSequence = [sequence bind:^RACSequenceBindBlock _Nonnull{
-    return ^(NSNumber *value, BOOL *stop) {
-      NSLog(@"RACSequenceBindBlock: %@", value);
-      value = @(value.integerValue * 2);
-      return [RACSequence return:value];
-    };
-  }];
-  NSLog(@"sequence:     head = (%@), tail=(%@)", sequence.head, sequence.tail);
-  NSLog(@"BindSequence: head = (%@), tail=(%@)", bindSequence.head, bindSequence.tail);
-  */
-  /*
-  RACCommand *command = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(NSNumber * _Nullable input) {
-    return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-      NSInteger integer = [input integerValue];
-      NSLog(@"input:%zd",integer);
-      for (NSInteger i = 0; i < integer; i++) {
-        [subscriber sendNext:@(i)];
-      }
-      [subscriber sendCompleted];
-      return nil;
-    }];
-  }];
-  [[command.executionSignals switchToLatest] subscribeNext:^(id  _Nullable x) {
-    NSLog(@"%@", x);
-  }];
-  
-  [command execute:@1];
-   [command execute:@2];
-   [command execute:@3];
-   */
-//  [RACScheduler.mainThreadScheduler afterDelay:0.1
-//                                      schedule:^{
-//                                        [command execute:@3];
-//                                      }];
-//  [RACScheduler.mainThreadScheduler afterDelay:0.2
-//                                      schedule:^{
-//                                        [command execute:@3];
-//                                      }];
- 
-  
-
-  
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-  
-    ViewController *v = [[ViewController alloc] init];
-    self.window.rootViewController = v;
+   // ViewController *v = [[ViewController alloc] init];
+    self.window.rootViewController = [[UIViewController alloc] init];
   
     [self.window makeKeyAndVisible];
   
